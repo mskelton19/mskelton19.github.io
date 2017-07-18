@@ -39,3 +39,76 @@ div h3 {
   border: 1px solid green;
   padding: 1em;
 }
+
+#eriador {
+  background-color: darkgray;
+}
+
+.bree {
+  background-color: brown;
+  border: 1px solid green;
+  padding: 1em;
+}
+
+.rivendell {
+  background-color: blue;;
+  border: 1px solid darkblue;
+  padding: 1em;
+  color: white;
+}
+
+.moria {
+  background-color: indigo;
+  border: 1px solid black;
+  padding: 1em;
+  color: darkgray;
+}
+
+#midEarth {
+  background-color: white;
+}
+
+.isengard {
+  background-color: darkGray;
+  padding: 1em;
+  border: 1px solid darkblue;
+  color: darkblue;
+}
+
+.rohan {
+  background-color: saddlebrown;
+  padding: 1em;
+  border: 1px solid tan;
+  color: tan;
+}
+
+.gondor {
+  background-color: black;
+  padding: 1em;
+  border: 1px solid ivory;
+  color: ivory;
+}
+
+#mordor {
+  background-color: black;
+}
+.mtDoom {
+  background-color: black;
+  padding: 1em;
+  border: 1px solid orange;
+  color: orange;
+}
+
+.morgul {
+  background-color: black;
+  padding: 1em;
+  border: 1px solid gray;
+  color: gray;
+}
+
+.gate {
+  background-color: black;
+  padding: 1em;
+  border: 1px solid darkgray;
+  color: darkgray;
+}

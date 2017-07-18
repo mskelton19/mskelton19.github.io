@@ -3,24 +3,29 @@ $ (() => {
 let hobbiton = 0;
 let theDowns = 0;
 let theForest = 0;
+let firstRound = 0;
+let bree = 0;
+let rivendell = 0;
+let moria = 0;
+let secondRound = 0;
 
-const applyRandNum = () => {
-  const randNum = Math.floor(Math.random() * 3) + 1;
+const round1 = () => {
+  const randNum1 = Math.floor(Math.random() * 3) + 1;
   // console.log(randNum);
 
-  if(randNum === 1 && hobbiton > 0) {
+  if(randNum1 === 1 && hobbiton > 0) {
     $('.hobbiton').css('background', 'red');
     lose();
-  } else if (randNum === 1){
+  } else if (randNum1 === 1){
     $('.hobbiton').css('background', 'red');
     advance();
-  } else if (randNum === 2 && theDowns > 0){
+  } else if (randNum1 === 2 && theDowns > 0){
     $('.theDowns').css('background', 'red');
     lose();
-  } else if (randNum === 2) {
+  } else if (randNum1 === 2) {
     $('.theDowns').css('background', 'red');
     advance();
-  } else if (randNum === 3 && theForest > 0){
+  } else if (randNum1 === 3 && theForest > 0){
     $('.theForest').css('background', 'red');
     lose();
   } else {
@@ -28,6 +33,30 @@ const applyRandNum = () => {
     advance();
   }
 }
+
+const round2 = () => {
+  const randNum2 = Math.floor(Math.random() * 3) + 1;
+
+  if(firstRound === 0){
+    alert('You must pass through the Shire first.');
+  } else if (randNum2 === 1 && bree > 0){
+    $('.bree').css('background', 'red');
+    lose();
+  } else if (randNum2 === 1){
+    advance();
+  }  else if (randNum2 === 2 && rivendell > 0){
+    $('.rivendell').css('background', 'red');
+    lose();
+  } else if (randNum2 === 2){
+    advance();
+  }  else if (randNum2 === 3 && moria > 0){
+    $('.moria').css('background', 'red');
+    lose();
+  } else if (randNum2 === 1){
+    advance();
+}
+}
+
 
 const lose = () => {
   alert('You have been caught by the Nazgul. Sauron has regained the one ring');
@@ -39,28 +68,55 @@ const advance = () => {
 
 
 $('.hobbiton').on('click', (e) => {
-  $('.hobbiton').text('You have arrived in Hobbiton');
+  $('.hobbiton').text('Hobbiton*');
   hobbiton++
-  applyRandNum();
+  firstRound++
+  round1();
 })
 
 $('.theDowns').on('click', (e) => {
-  $('.hobbiton').text('You are in the Barrow Downs');
+  $('.theDowns').text('The Barrow Downs*');
   theDowns++
-  applyRandNum();
+  firstRound++
+  round1();
 })
 
 $('.theForest').on('click', (e) => {
-  $('.hobbiton').text('You are in The Old Forest');
+  $('.hobbiton').text('The Old Forest*');
   theForest++
-  applyRandNum();
+  firstRound++
+  round1();
 })
+
+$('.bree').on('click', (e) => {
+  if(firstRound > 0){
+    $('.bree').text("Bree*");
+    bree++
+    secondRound++
+    round2();
+  }
+})
+
+$('.rivendell').on('click', (e) => {
+  $('.rivendell').text('Rivendell*');
+  rivendell++
+  secondRound++
+  round2();
+})
+
+$('.moria').on('click', (e) => {
+  $('.moria').text('Mines of Moria*');
+  moria++
+  secondRound++
+  round2();
+})
+
 
 $('#restart').on('click', (e) => {
   theForest = 0;
   theDowns = 0;
   hobbiton = 0;
-  $('.hobbiton').css('background', 'green')
+  $('.hobbiton').css('background', 'green').text('Hobbiton')
   $('.theDowns').css('background', 'gray')
   $('.theForest').css('background', 'darkgreen')
 })
