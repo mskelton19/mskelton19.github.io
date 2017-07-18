@@ -1,0 +1,26 @@
+#theShire {
+  /*border: 1px solid black;*/
+  text-align: center;
+}
+
+div h3 {
+  display: inline-block;
+}
+
+.hobbiton {
+  background-color: green;
+  border: 1px solid brown;
+  padding: 1em;
+}
+
+.theDowns {
+  background-color: gray;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+.theForest {
+  background-color: darkGreen;
+  border: 1px solid green;
+  padding: 1em;
+}
