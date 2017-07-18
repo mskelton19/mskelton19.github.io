@@ -1,6 +1,21 @@
 #theShire {
   /*border: 1px solid black;*/
   text-align: center;
+  background-color: darkgreen;
+}
+
+#bagEnd {
+  text-align: center;
+  background-color: lightgreen;
+}
+
+#bagEnd h3 {
+  padding: 1em;
+  border: 1px solid black;
+}
+
+#bagEnd button {
+  margin: auto;
 }
 
 div h3 {
