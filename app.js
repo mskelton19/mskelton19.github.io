@@ -8,7 +8,12 @@ let bree = 0;
 let rivendell = 0;
 let moria = 0;
 let secondRound = 0;
+let rohan = 0;
+let isengard = 0;
+let gondor = 0;
+let thirdRound = 0;
 
+// Round 1
 const round1 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
   // console.log(randNum);
@@ -34,6 +39,7 @@ const round1 = () => {
   }
 }
 
+// Round 2
 const round2 = () => {
   const randNum2 = Math.floor(Math.random() * 3) + 1;
 
@@ -57,7 +63,29 @@ const round2 = () => {
 }
 }
 
+// Round 3
+const round3 = () => {
+  const randNum3 = Math.floor(Math.random() * 3) + 1;
 
+  if(secondRound === 0){
+    alert('You must pass through Eriador first.');
+  } else if (randNum3 === 1 && isengard > 0){
+    $('.isengard').css('background', 'red');
+    lose();
+  } else if (randNum3 === 1){
+    advance();
+  }  else if (randNum3 === 2 && rohan > 0){
+    $('.rohan').css('background', 'red');
+    lose();
+  } else if (randNum3 === 2){
+    advance();
+  }  else if (randNum3 === 3 && gondor > 0){
+    $('.gondor').css('background', 'red');
+    lose();
+  } else if (randNum3 === 1){
+    advance();
+}
+}
 const lose = () => {
   alert('You have been caught by the Nazgul. Sauron has regained the one ring');
 }
@@ -89,12 +117,10 @@ $('.theForest').on('click', (e) => {
 })
 
 $('.bree').on('click', (e) => {
-  if(firstRound > 0){
     $('.bree').text("Bree*");
     bree++
     secondRound++
     round2();
-  }
 })
 
 $('.rivendell').on('click', (e) => {
@@ -109,6 +135,27 @@ $('.moria').on('click', (e) => {
   moria++
   secondRound++
   round2();
+})
+
+$('.isengard').on('click', (e) => {
+  $('.isengard').text("Isengard*");
+  bree++
+  secondRound++
+  round3();
+})
+
+$('.rohan').on('click', (e) => {
+  $('.rohan').text('Rohan*');
+  rohan++
+  thirdRound++
+  round3();
+})
+
+$('.gondor').on('click', (e) => {
+  $('.gondor').text('Gondor*');
+  gondor++
+  thirdRound++
+  round3();
 })
 
 
