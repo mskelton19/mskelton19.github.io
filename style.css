@@ -1,114 +1,155 @@
+body {
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*background-image: url('http://cdn.playbuzz.com/cdn/f28e050d-fc34-4148-99a5-59a30be5cbd4/398e43ff-24de-49a2-8d52-79d08f997cb2.jpg')*/
+}
+
 #theShire {
   /*border: 1px solid black;*/
   text-align: center;
-  background-color: darkgreen;
+  /*background-color: darkgreen;*/
 }
 
 #bagEnd {
   text-align: center;
-  background-color: lightgreen;
+  /*background-color: lightgreen;*/
 }
 
 #bagEnd h3 {
-  padding: 1em;
-  border: 1px solid black;
+  padding: 2em;
+  border: 1px solid darkgreen;
+  border-radius: 25%;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0d/a3/fe/e5/bag-end.jpg')
 }
 
 #bagEnd button {
   margin: auto;
 }
 
-div h3 {
-  display: inline-block;
-}
-
-.hobbiton {
-  background-color: green;
-  border: 1px solid brown;
-  padding: 1em;
-}
-
-.theDowns {
-  background-color: gray;
-  border: 1px solid black;
-  padding: 1em;
-}
-
-.theForest {
-  background-color: darkGreen;
-  border: 1px solid green;
-  padding: 1em;
-}
-
-#eriador {
-  background-color: darkgray;
-}
-
-.bree {
-  background-color: brown;
-  border: 1px solid green;
-  padding: 1em;
-}
-
-.rivendell {
-  background-color: blue;;
-  border: 1px solid darkblue;
-  padding: 1em;
+#restart {
+  background-color: darkgreen;
   color: white;
 }
 
-.moria {
-  background-color: indigo;
+div h3 {
+  display: inline-block;
+  border-radius: 15%;
+}
+
+.hobbiton {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5leBj1rGIbcVj0FZ2aocieKrAflUFJgZBSEF0R9_z4Zq7WdH');
+  border: 1px solid brown;
+  padding: 2em;
+  color: yellow;
+  width: 150px;
+}
+
+.brandywine {
+  background-position: center center;
+  background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/7/72/BrandywineBridgeLOTRO.jpg/revision/latest?cb=20120905211158');
   border: 1px solid black;
-  padding: 1em;
-  color: darkgray;
+  padding: 2em;
+  color: white;
+  width: 150px;
+}
+
+.theForest {
+  background-position: center center;
+  background-image: url('https://qph.ec.quoracdn.net/main-qimg-2c4f366a20340742468f596eafb787fb');
+  border: 1px solid green;
+  padding: 2em;
+  width: 150px;
+}
+
+#eriador {
+  /*background-color: darkgray;*/
+}
+
+.bree {
+  background-position: center center;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/61/1d/8d/611d8d06614d04527bee114f7146fcd3.jpg');
+  border: 1px solid green;
+  padding: 2em;
+  color: white;
+  width: 175px;
+}
+
+.rivendell {
+  background-position: center center;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeox8LC2nxifDQ_5s_i8dWgPXvFXsdxG_rPgz6As57620qf8a');
+  border: 1px solid darkblue;
+  padding: 2em;
+  color: white;
+  width: 175px;
+}
+
+.moria {
+  background-position: center center;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8D_vSpGYrZvXfMXJtLzySArg_TyngYliPOjsxj_LNjoOt9pHnZA');
+  border: 1px solid black;
+  padding: 2em;
+  color: white;
+  width: 175px;
 }
 
 #midEarth {
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .isengard {
-  background-color: darkGray;
-  padding: 1em;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmDvbI9jAIBoOYxmNUy8ZIY1yydgzoBd-xHxvIT3OyacrLfGZ4');
+  padding: 2em;
   border: 1px solid darkblue;
   color: darkblue;
+  width: 200px;
 }
 
 .rohan {
-  background-color: saddlebrown;
-  padding: 1em;
+  background-position: center center;
+  background-image: url('https://vignette2.wikia.nocookie.net/edain-mod/images/a/a1/Edoras.jpeg/revision/latest?cb=20160108131229');
+  padding: 2em;
   border: 1px solid tan;
-  color: tan;
+  color: white;
+  width: 200px;
 }
 
 .gondor {
-  background-color: black;
-  padding: 1em;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxuJQu5-F-DHBru6KXEm5blx2riECiizAlQvhMcw6322mxzXZO');
+  padding: 2em;
   border: 1px solid ivory;
   color: ivory;
+  width: 200px;
 }
 
 #mordor {
-  background-color: black;
+  /*background-color: black;*/
 }
 .mtDoom {
-  background-color: black;
-  padding: 1em;
+  background-position: center center;
+  background-image: url('http://www.dylancolestudio.com/Matte/ROTK/images/573_22_MP_4k_v01.jpg');
+  padding: 2em;
   border: 1px solid orange;
-  color: orange;
+  color: red;
+  width: 225px;
 }
 
 .morgul {
-  background-color: black;
-  padding: 1em;
+  background-position: center center;
+  background-image: url('https://i.ytimg.com/vi/MPVo2KDOosk/hqdefault.jpg');
+  padding: 2em;
   border: 1px solid gray;
-  color: gray;
+  color: lightgreen;
+  width: 250px;
 }
 
 .gate {
-  background-color: black;
-  padding: 1em;
+  background-position: center center;
+  background-image: url('https://vignette3.wikia.nocookie.net/lotr/images/5/57/Black_gate.png/revision/latest?cb=20131113193151');
+  padding: 2em;
   border: 1px solid darkgray;
   color: darkgray;
+  width: 250px;
 }
