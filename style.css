@@ -8,6 +8,7 @@ body {
   /*border: 1px solid black;*/
   text-align: center;
   /*background-color: darkgreen;*/
+  border:1px solid black;
 }
 
 #bagEnd {
@@ -62,10 +63,12 @@ div h3 {
   border: 1px solid green;
   padding: 2em;
   width: 150px;
+  color: white;
 }
 
 #eriador {
   /*background-color: darkgray;*/
+  text-align: center;
 }
 
 .bree {
@@ -97,14 +100,16 @@ div h3 {
 
 #midEarth {
   /*background-color: white;*/
+  text-align: center;
 }
 
 .isengard {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmDvbI9jAIBoOYxmNUy8ZIY1yydgzoBd-xHxvIT3OyacrLfGZ4');
   padding: 2em;
   border: 1px solid darkblue;
-  color: darkblue;
+  color: white;
   width: 200px;
+  text-align: right;
 }
 
 .rohan {
@@ -122,10 +127,12 @@ div h3 {
   border: 1px solid ivory;
   color: ivory;
   width: 200px;
+  text-align: right;
 }
 
 #mordor {
   /*background-color: black;*/
+  text-align: center;
 }
 .mtDoom {
   background-position: center center;
