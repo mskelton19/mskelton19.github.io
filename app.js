@@ -59,13 +59,13 @@ $('#mordor4').hide();
 const shire1 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
   console.log(lives)
-  if(randNum1 === 1 && hobbiton > 0 && lives >= 0) {
+  if(randNum1 === 1 && hobbiton > 0 && lives > 0) {
     $('.hobbiton').css('background-position', 'center center');
     $('.hobbiton').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.hobbiton').css('color', 'white');
     midShire();
     loseLives();
-  } else if (randNum1 === 1 && hobbiton > 0 && lives < 0) {
+  } else if (randNum1 === 1 && hobbiton > 0 && lives <= 0) {
     $('.hobbiton').css('background-position', 'center center');
     $('.hobbiton').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.hobbiton').css('color', 'white');
@@ -76,13 +76,13 @@ const shire1 = () => {
     $('.hobbiton').css('color', 'white');
     midShire();
     advance();
-  } else if(randNum1 === 2 && crickhollow > 0 && lives >= 0) {
+  } else if(randNum1 === 2 && crickhollow > 0 && lives > 0) {
     $('.crickhollow').css('background-position', 'center center');
     $('.crickhollow').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.crickhollow').css('color', 'white');
     midShire();
     loseLives();
-  } else if (randNum1 === 2 && crickhollow > 0 && lives < 0){
+  } else if (randNum1 === 2 && crickhollow > 0 && lives <= 0){
     $('.crickhollow').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.crickhollow').css('color', 'white');
     lose();
@@ -91,13 +91,13 @@ const shire1 = () => {
     $('.crickhollow').css('color', 'white');
     midShire();
     advance();
-  } else if(randNum1 === 3 && farmer > 0 && lives >= 0) {
+  } else if(randNum1 === 3 && farmer > 0 && lives > 0) {
     $('.farmer').css('background-position', 'center center');
     $('.farmer').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.farmer').css('color', 'white');
     midShire();
     loseLives();
-  } else if (randNum1 === 3 && farmer > 0 && lives < 0){
+  } else if (randNum1 === 3 && farmer > 0 && lives <= 0){
     $('.farmer').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.farmer').css('color', 'white');
     lose();
@@ -111,33 +111,33 @@ const shire1 = () => {
 // Shire Round 2
 const shire2 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
-    if (randNum1 === 1 && buckland > 0 && lives >= 0){
+    if (randNum1 === 1 && buckland > 0 && lives > 0){
     $('.buckland').css('background', 'red');
     endShire();
     loseLives();
-  } else if(randNum1 === 1 && buckland > 0 && lives < 0){
+  } else if(randNum1 === 1 && buckland > 0 && lives <= 0){
     $('.buckland').css('background', 'red');
     lose();
   } else if (randNum1 === 1){
     $('.buckland').css('background', 'red');
     endShire();
     advance();
-  } else if (randNum1 === 2 && brandywine > 0 && lives >= 0){
+  } else if (randNum1 === 2 && brandywine > 0 && lives > 0){
     $('.brandywine').css('background', 'red');
     endShire();
     loseLives();
-  } else if(randNum1 === 2 && brandywine > 0 && lives < 0){
+  } else if(randNum1 === 2 && brandywine > 0 && lives <= 0){
     $('.brandywine').css('background', 'red');
     lose();
   } else if (randNum1 === 2){
     $('.brandywine').css('background', 'red');
     endShire();
     advance();
-  } else if (randNum1 === 3 && theForest > 0 && lives >= 0){
+  } else if (randNum1 === 3 && theForest > 0 && lives > 0){
     $('.theForest').css('background', 'red');
     endShire();
     loseLives();
-  } else if(randNum1 === 3 && theForest > 0 && lives < 0){
+  } else if(randNum1 === 3 && theForest > 0 && lives <= 0){
     $('.theForest').css('background', 'red');
     lose();
   } else if (randNum1 === 3){
@@ -151,33 +151,33 @@ const shire2 = () => {
 const shire3 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
 
-  if (randNum1 === 1 && bree > 0 && lives >= 0){
+  if (randNum1 === 1 && bree > 0 && lives > 0){
     $('.bree').css('background', 'red');
     safe();
     loseLives();
-  } else if(randNum1 === 1 && bree > 0 && lives < 0){
-    $('.brandywine').css('background', 'red');
+  } else if(randNum1 === 1 && bree > 0 && lives <= 0){
+    $('.bree').css('background', 'red');
     lose();
   } else if (randNum1 === 1){
     $('.bree').css('background', 'red');
     safe();
     advance();
-  } else if (randNum1 === 2 && amunSul > 0 && lives >= 0){
+  } else if (randNum1 === 2 && amunSul > 0 && lives > 0){
     $('.amunSul').css('background', 'red');
     safe();
     loseLives();
-  } else if(randNum1 === 2 && amunSul > 0 && lives < 0){
+  } else if(randNum1 === 2 && amunSul > 0 && lives <= 0){
     $('.amunSul').css('background', 'red');
     lose();
   } else if (randNum1 === 2){
     $('.amunSul').css('background', 'red');
     safe();
     advance();
-  } else if (randNum1 === 3 && barrowDowns > 0 && lives >= 0){
+  } else if (randNum1 === 3 && barrowDowns > 0 && lives > 0){
     $('.barrowDowns').css('background', 'red');
-    endShire();
+    safe();
     loseLives();
-  } else if(randNum1 === 3 && barrowDowns > 0 && lives < 0){
+  } else if(randNum1 === 3 && barrowDowns > 0 && lives <= 0){
     $('.barrowDowns').css('background', 'red');
     lose();
   } else if (randNum1 === 3){
@@ -189,18 +189,19 @@ const shire3 = () => {
 
 const shire4 = () => {
     alert('You have reached Rivendell and gained companions. You now have additional hit points');
-    lives++;
+    lives+
+    console.log(lives);
     $('#earlyME').show();
 }
 
 // Middle Earth Round 1
 const midEarth1 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
-    if (randNum1 === 1 && hollin > 0 && lives >= 0){
+    if (randNum1 === 1 && hollin > 0 && lives > 0){
     $('.hollin').css('background', 'red');
     lorien2();
     loseLives();
-  } else if(randNum1 === 1 && hollin > 0 && lives < 0){
+  } else if(randNum1 === 1 && hollin > 0 && lives <= 0){
     $('.hollin').css('background', 'red');
     lose();
   } else if (randNum1 === 1){
@@ -348,6 +349,8 @@ const midEarth4 = () => {
 }
 }
 const midEarth5 = () => {
+  lives+
+  console.log(lives)
   alert('You have made it safely to Mordor. Now for the final push');
   m1();
 }
@@ -423,23 +426,27 @@ const mordor2 = () => {
 
 const mordor3 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
-  if (randNum1 === 1 && gorgorath > 0){
-  $('.gorgorath').css('background', 'red');
-  lose();
+  if (randNum1 === 1 && gorgorath > 0 && lives >= 0){
+    $('.gorgorath').css('background', 'red');
+    m3();
+    loseLives();
+} else if(randNum1 === 1 && gorgorath > 0 && lives < 0){
+    $('.gorgorath').css('background', 'red');
+    lose();
 } else if (randNum1 === 1){
   $('.gorgorath').css('background', 'red');
+  m3();
   advance();
-}  else if (randNum1 === 2 && baradDur > 0){
+} if (randNum1 === 1 && baradDur > 0 && lives >= 0){
+  $('.baradDur').css('background', 'red');
+  m3();
+  loseLives();
+} else if(randNum1 === 1 && baradDur > 0 && lives < 0){
   $('.baradDur').css('background', 'red');
   lose();
 } else if (randNum1 === 2){
   $('.baradDur').css('background', 'red');
-  advance();
-}  else if (randNum1 === 3 && argonath > 0){
-  $('.argonath').css('background', 'red');
-  lose();
-} else if (randNum1 === 3){
-  $('.argonath').css('background', 'red');
+  m3();
   advance();
 }
 }
@@ -454,8 +461,8 @@ const mordor4 = () => {
   win();
   }
 }
-
-
+//
+//
 const lose = () => {
   alert('You have been caught by the Nazgul. Sauron has regained the one ring');
 }
@@ -497,6 +504,9 @@ const m1 = () => {
 
 const m2 = () => {
   $('#mordor3').show();
+}
+const m3 = () => {
+  $('#mordor4').show();
 }
 $('.hobbiton').on('click', (e) => {
   $('.hobbiton').text('Hobbiton*');
@@ -691,18 +701,15 @@ $('.argonath').on('click', (e) => {
   midEarth4();
 })
 
-
-
 $('#start').on('click', (e) => {
   $('#hobbits').show();
-  lives++
-//   theForest = 0;
-//   theDowns = 0;
-//   hobbiton = 0;
-//   $('.hobbiton').css('background', 'green').text('Hobbiton')
-//   $('.theDowns').css('background', 'gray')
-//   $('.theForest').css('background', 'darkgreen')
+  lives += 1
+  theForest = 0;
+  theDowns = 0;
+  hobbiton = 0;
+  $('.hobbiton').css('background', 'green').text('Hobbiton')
+  $('.theDowns').css('background', 'gray')
+  $('.theForest').css('background', 'darkgreen')
 })
-
 
 })
