@@ -48,13 +48,31 @@ div h3 {
   width: 150px;
 }
 
-.brandywine {
+.buckland {
   background-position: center center;
+  background-image: url('http://static.wixstatic.com/media/470378_1f30523464d87109999d18f9dd73f2e1.jpg_1024');
+  border: 1px solid brown;
+  padding: 2em;
+  color: yellow;
+  width: 175px;
+}
+
+.farmer {
+  background-position: center;
+  background-image: url('http://users.bestweb.net/~jfgm/Mushrooms%20Website/Images/Tim%20Kirk%20Maggots%20Farm.jpg');
+  border: 1px solid brown;
+  padding: 2em;
+  color: yellow;
+  width: 175px;
+}
+
+.brandywine {
+  background-position: center;
   background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/7/72/BrandywineBridgeLOTRO.jpg/revision/latest?cb=20120905211158');
   border: 1px solid black;
   padding: 2em;
   color: white;
-  width: 150px;
+  width: 175px;
 }
 
 .theForest {
@@ -62,13 +80,17 @@ div h3 {
   background-image: url('https://qph.ec.quoracdn.net/main-qimg-2c4f366a20340742468f596eafb787fb');
   border: 1px solid green;
   padding: 2em;
-  width: 150px;
-  color: white;
+  width: 175px;
+  color: wh/≥ite;
 }
 
-#eriador {
-  /*background-color: darkgray;*/
-  text-align: center;
+.crickhollow {
+  background-position: center;
+  background-image: url('https://vignette2.wikia.nocookie.net/lotr/images/d/df/Crickhollow.jpg/revision/latest?cb=20120309214744');
+  border: 1px solid brown;
+  padding: 2em;
+  color: yellow;
+  width: 150px;
 }
 
 .bree {
@@ -80,8 +102,33 @@ div h3 {
   width: 175px;
 }
 
+.amunSul {
+  background-position: center;
+  background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/a/ac/Imagess.jpg/revision/latest?cb=20130706004959');
+  border: 1px solid brown;
+  padding: 2em;
+  color: yellow;
+  width: 150px;
+}
+.barrowDowns {
+  background-position: center;
+  background-image: url('http://vignette2.wikia.nocookie.net/lotr/images/4/42/Barrow-downs%2C_Cardolan%27s_capital.JPG/revision/latest?cb=20090917154715');
+  border: 1px solid green;
+  padding: 2em;
+  color: white;
+  width: 175px;
+}
+.bree {
+  background-position: center;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/61/1d/8d/611d8d06614d04527bee114f7146fcd3.jpg');
+  border: 1px solid green;
+  padding: 2em;
+  color: white;
+  width: 175px;
+}
+
 .rivendell {
-  background-position: center center;
+  background-position: center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeox8LC2nxifDQ_5s_i8dWgPXvFXsdxG_rPgz6As57620qf8a');
   border: 1px solid darkblue;
   padding: 2em;
@@ -98,8 +145,55 @@ div h3 {
   width: 175px;
 }
 
-#midEarth {
-  /*background-color: white;*/
+#middleEarth {
+  text-align: center;
+}
+
+.hollin {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
+
+.redhorn {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
+
+.gateOfMoria {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
+
+.moria {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
+
+.lorien {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
+
+.fangorn {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
   text-align: center;
 }
 
@@ -112,6 +206,45 @@ div h3 {
   text-align: right;
 }
 
+.helmsDeep {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
+
+.edoras {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
+
+.paths {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
+
+.tirith {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
+
+.argonath {
+  padding: 2em;
+  border: 1px solid darkblue;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
 .rohan {
   background-position: center center;
   background-image: url('https://vignette2.wikia.nocookie.net/edain-mod/images/a/a1/Edoras.jpeg/revision/latest?cb=20160108131229');
@@ -121,6 +254,12 @@ div h3 {
   width: 200px;
 }
 
+.ithilien {
+  padding: 2em;
+  border: 1px solid tan;
+  color: black;
+  width: 200px;
+}
 .gondor {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxuJQu5-F-DHBru6KXEm5blx2riECiizAlQvhMcw6322mxzXZO');
   padding: 2em;
@@ -134,6 +273,37 @@ div h3 {
   /*background-color: black;*/
   text-align: center;
 }
+
+.osgiliath {
+  padding: 2em;
+  border: 1px solid gray;
+  color: lightgreen;
+  width: 250px;
+}
+.deadMarshes {
+  padding: 2em;
+  border: 1px solid gray;
+  color: lightgreen;
+  width: 250px;
+}
+.ephelDuath {
+  padding: 2em;
+  border: 1px solid gray;
+  color: lightgreen;
+  width: 250px;
+}
+.shelob {
+  padding: 2em;
+  border: 1px solid gray;
+  color: lightgreen;
+  width: 250px;
+}
+.gorgorath {
+  padding: 2em;
+  border: 1px solid gray;
+  color: lightgreen;
+  width: 250px;
+}
 .mtDoom {
   background-position: center center;
   background-image: url('http://www.dylancolestudio.com/Matte/ROTK/images/573_22_MP_4k_v01.jpg');
@@ -141,6 +311,12 @@ div h3 {
   border: 1px solid orange;
   color: red;
   width: 225px;
+}
+.baradDur {
+  padding: 2em;
+  border: 1px solid gray;
+  color: lightgreen;
+  width: 250px;
 }
 
 .morgul {
