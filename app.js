@@ -39,11 +39,22 @@ let shelob = 0;
 let baradDur = 0;
 let gate = 0;
 
-
-
 $('#theShire').hide();
+$('#hobbits').hide();
+$('#midShire').hide();
+$('#endShire').hide();
+$('#safe').hide();
 $('#middleEarth').hide();
+$('#earlyME').hide();
+$('#lorien').hide();
+$('#rohan').hide();
+$('#aragorn').hide();
+$('#gondor').hide();
 $('#mordor').hide();
+$('#mordor1').hide();
+$('#mordor2').hide();
+$('#mordor3').hide();
+$('#mordor4').hide();
 
 // Shire Round 1
 const shire1 = () => {
@@ -55,6 +66,7 @@ const shire1 = () => {
     $('.hobbiton').css('color', 'white');
     midShire();
     loseLives();
+    livesLeft();
   } else if (randNum1 === 1 && hobbiton > 0 && lives <= 0) {
     $('.hobbiton').css('background-position', 'center center');
     $('.hobbiton').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
@@ -64,7 +76,6 @@ const shire1 = () => {
     $('.hobbiton').css('background-position', 'center center');
     $('.hobbiton').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.hobbiton').css('color', 'white');
-    pts++
     midShire();
     advance();
   } else if(randNum1 === 2 && crickhollow > 0 && lives > 0) {
@@ -73,6 +84,7 @@ const shire1 = () => {
     $('.crickhollow').css('color', 'white');
     midShire();
     loseLives();
+    livesLeft();
   } else if (randNum1 === 2 && crickhollow > 0 && lives <= 0){
     $('.crickhollow').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.crickhollow').css('color', 'white');
@@ -80,7 +92,6 @@ const shire1 = () => {
   } else if (randNum1 === 2) {
     $('.crickhollow').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.crickhollow').css('color', 'white');
-    pts++
     midShire();
     advance();
   } else if(randNum1 === 3 && farmer > 0 && lives > 0) {
@@ -89,6 +100,7 @@ const shire1 = () => {
     $('.farmer').css('color', 'white');
     midShire();
     loseLives();
+    livesLeft();
   } else if (randNum1 === 3 && farmer > 0 && lives <= 0){
     $('.farmer').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.farmer').css('color', 'white');
@@ -96,11 +108,9 @@ const shire1 = () => {
   } else {
     $('.farmer').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.farmer').css('color', 'white');
-    pts++
     midShire();
     advance();
   }
-console.log(pts)
 }
 
 // Shire Round 2
@@ -110,6 +120,7 @@ const shire2 = () => {
     $('.buckland').css('background', 'red');
     endShire();
     loseLives();
+    livesLeft();
   } else if(randNum1 === 1 && buckland > 0 && lives <= 0){
     $('.buckland').css('background', 'red');
     lose();
@@ -121,6 +132,7 @@ const shire2 = () => {
     $('.brandywine').css('background', 'red');
     endShire();
     loseLives();
+    livesLeft();
   } else if(randNum1 === 2 && brandywine > 0 && lives <= 0){
     $('.brandywine').css('background', 'red');
     lose();
@@ -132,6 +144,7 @@ const shire2 = () => {
     $('.theForest').css('background', 'red');
     endShire();
     loseLives();
+    livesLeft();
   } else if(randNum1 === 3 && theForest > 0 && lives <= 0){
     $('.theForest').css('background', 'red');
     lose();
@@ -150,6 +163,7 @@ const shire3 = () => {
     $('.bree').css('background', 'red');
     safe();
     loseLives();
+    livesLeft();
   } else if(randNum1 === 1 && bree > 0 && lives <= 0){
     $('.bree').css('background', 'red');
     lose();
@@ -161,6 +175,7 @@ const shire3 = () => {
     $('.amunSul').css('background', 'red');
     safe();
     loseLives();
+    livesLeft();
   } else if(randNum1 === 2 && amunSul > 0 && lives <= 0){
     $('.amunSul').css('background', 'red');
     lose();
@@ -172,6 +187,7 @@ const shire3 = () => {
     $('.barrowDowns').css('background', 'red');
     safe();
     loseLives();
+    livesLeft();
   } else if(randNum1 === 3 && barrowDowns > 0 && lives <= 0){
     $('.barrowDowns').css('background', 'red');
     lose();
@@ -185,7 +201,7 @@ const shire3 = () => {
 const shire4 = () => {
     alert('You have reached Rivendell and gained companions. You now have additional hit points');
     lives+
-    console.log(lives);
+    livesLeft();
     $('#middleEarth').show();
 }
 
@@ -195,6 +211,7 @@ const midEarth1 = () => {
     $('.hollin').css('background', 'red');
     lorien2();
     loseLives();
+    livesLeft();
   } else if(randNum1 === 1 && hollin > 0 && lives <= 0){
     $('.hollin').css('background', 'red');
     lose();
@@ -206,6 +223,7 @@ const midEarth1 = () => {
     $('.redhorn').css('background', 'red');
     lorien2();
     loseLives();
+    livesLeft();
   } else if(randNum1 === 2 && redhorn > 0 && lives <= 0){
     $('.redhorn').css('background', 'red');
     lose();
@@ -217,6 +235,7 @@ const midEarth1 = () => {
     $('.gateOfMoria').css('background', 'red');
     lorien2();
     loseLives();
+    livesLeft();
   } else if(randNum1 === 3 && gateOfMoria > 0 && lives <= 0){
     $('.gateOfMoria').css('background', 'red');
     lose();
@@ -233,6 +252,7 @@ const midEarth2 = () => {
     $('.moria').css('background', 'red');
     rohan2();
     loseLives();
+    livesLeft();
 } else if(randNum1 === 1 && moria > 0 && lives <= 0){
     $('.moria').css('background', 'red');
     lose();
@@ -244,6 +264,7 @@ const midEarth2 = () => {
   $('.lorien').css('background', 'red');
   rohan2();
   loseLives();
+  livesLeft();
 } else if(randNum1 === 2 && lorien > 0 && lives <= 0){
   $('.lorien').css('background', 'red');
   lose();
@@ -255,6 +276,7 @@ const midEarth2 = () => {
   $('.fangorn').css('background', 'red');
   rohan2();
   loseLives();
+  livesLeft();
 } else if(randNum1 === 2 && fangorn > 0 && lives <= 0){
   $('.fangorn').css('background', 'red');
   lose();
@@ -272,6 +294,7 @@ const midEarth3 = () => {
     $('.isengard').css('background', 'red');
     aragorn();
     loseLives();
+    livesLeft();
 } else if(randNum1 === 1 && isengard > 0 && lives <= 0){
     $('.isengard').css('background', 'red');
     lose();
@@ -283,6 +306,7 @@ const midEarth3 = () => {
     $('.helmsDeep').css('background', 'red');
     aragorn();
     loseLives();
+    livesLeft();
 } else if(randNum1 === 2 && helmsDeep > 0 && lives <= 0){
     $('.helmsDeep').css('background', 'red');
     lose();
@@ -294,6 +318,7 @@ const midEarth3 = () => {
     $('.edoras').css('background', 'red');
     aragorn();
     loseLives();
+    livesLeft();
 } else if(randNum1 === 3 && edoras > 0 && lives <= 0){
     $('.edoras').css('background', 'red');
     lose();
@@ -311,6 +336,7 @@ const midEarth4 = () => {
     $('.paths').css('background', 'red');
     gondor2();
     loseLives();
+    livesLeft();
 } else if(randNum1 === 1 && paths > 0 && lives <= 0){
     $('.paths').css('background', 'red');
     lose();
@@ -322,6 +348,7 @@ const midEarth4 = () => {
   $('.ithilien').css('background', 'red');
   gondor2();
   loseLives();
+  livesLeft();
 } else if(randNum1 === 2 && ithilien > 0 && lives <= 0){
   $('.ithilien').css('background', 'red');
   lose();
@@ -333,6 +360,7 @@ const midEarth4 = () => {
   $('.argonath').css('background', 'red');
   endShire();
   loseLives();
+  livesLeft();
 } else if(randNum1 === 3 && argonath > 0 && lives <= 0){
   $('.argonath').css('background', 'red');
   lose();
@@ -344,7 +372,7 @@ const midEarth4 = () => {
 }
 const midEarth5 = () => {
   lives+
-  console.log(lives)
+  livesLeft();
   alert('You have made it safely to Mordor. Now for the final push');
   $('#mordor').show();
   m1();
@@ -357,6 +385,7 @@ const mordor1 = () => {
     $('.osgiliath').css('background', 'red');
     m2();
     loseLives();
+    livesLeft();
 } else if(randNum1 === 1 && osgiliath > 0 && lives <= 0){
     $('.osgiliath').css('background', 'red');
     lose();
@@ -368,6 +397,7 @@ const mordor1 = () => {
   $('.deadMarshes').css('background', 'red');
   m2();
   loseLives();
+  livesLeft();
 } else if(randNum1 === 2 && deadMarshes > 0 && lives <= 0){
   $('.deadMarshes').css('background', 'red');
   lose();
@@ -379,6 +409,7 @@ const mordor1 = () => {
   $('.ephelDuath').css('background', 'red');
   m2();
   loseLives();
+  livesLeft();
 } else if(randNum1 === 1 && ephelDuath > 0 && lives <= 0){
   $('.ephelDuath').css('background', 'red');
   lose();
@@ -395,6 +426,7 @@ const mordor2 = () => {
     $('.morgul').css('background', 'red');
     m3();
     loseLives();
+    livesLeft();
 } else if(randNum1 === 1 && morgul > 0 && lives <= 0){
     $('.morgul').css('background', 'red');
     lose();
@@ -406,6 +438,7 @@ const mordor2 = () => {
   $('.shelob').css('background', 'red');
   m3();
   loseLives();
+  livesLeft();
 } else if(randNum1 === 2 && shelob > 0 && lives <= 0){
   $('.shelob').css('background', 'red');
   lose();
@@ -417,6 +450,7 @@ const mordor2 = () => {
   $('.gate').css('background', 'red');
   m3();
   loseLives();
+  livesLeft();
 } else if(randNum1 === 3 && gate > 0 && lives <= 0){
   $('.gate').css('background', 'red');
   lose();
@@ -433,6 +467,7 @@ const mordor3 = () => {
     $('.gorgorath').css('background', 'red');
     m3();
     loseLives();
+    livesLeft();
 } else if(randNum1 === 1 && gorgorath > 0 && lives <= 0){
   $('.gorgorath').css('background', 'red');
   lose();
@@ -444,6 +479,7 @@ const mordor3 = () => {
   $('.baradDur').css('background', 'red');
   m3();
   loseLives();
+  livesLeft();
 } else if(randNum1 === 2 && baradDur > 0 && lives <= 0){
   $('.baradDur').css('background', 'red');
   lose();
@@ -468,12 +504,16 @@ const mordor4 = () => {
 const lose = () => {
   alert('You have been caught by the Nazgul. Sauron has regained the one ring');
 }
+const livesLeft = () => {
+  $('.lives').text('Lives left: ' + lives)
+}
 const loseLives = () => {
   lives--
   alert('You have been spotted. You have ' + lives + ' lives left.')
 }
-
 const advance = () => {
+  pts++
+  $('.scoreboard').text('Scoreboard: ' + pts);
   alert("You have avoided Sauron's gaze. The journey continues. Keep it secret, keep it safe")
 }
 const midShire = () => {
@@ -705,8 +745,9 @@ $('.argonath').on('click', (e) => {
 
 $('#start').on('click', (e) => {
   $('#theShire').show();
-
+  $('#hobbits').show();
   lives += 1
+  livesLeft();
 })
 
 })
