@@ -39,6 +39,8 @@ let shelob = 0;
 let baradDur = 0;
 let gate = 0;
 
+
+
 $('#hobbits').hide();
 $('#midShire').hide();
 $('#endShire').hide();
@@ -74,6 +76,7 @@ const shire1 = () => {
     $('.hobbiton').css('background-position', 'center center');
     $('.hobbiton').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.hobbiton').css('color', 'white');
+    pts++
     midShire();
     advance();
   } else if(randNum1 === 2 && crickhollow > 0 && lives > 0) {
@@ -89,6 +92,7 @@ const shire1 = () => {
   } else if (randNum1 === 2) {
     $('.crickhollow').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.crickhollow').css('color', 'white');
+    pts++
     midShire();
     advance();
   } else if(randNum1 === 3 && farmer > 0 && lives > 0) {
@@ -104,10 +108,13 @@ const shire1 = () => {
   } else {
     $('.farmer').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.farmer').css('color', 'white');
+    pts++
     midShire();
     advance();
   }
+console.log(pts)
 }
+
 // Shire Round 2
 const shire2 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
@@ -194,7 +201,6 @@ const shire4 = () => {
     $('#earlyME').show();
 }
 
-// Middle Earth Round 1
 const midEarth1 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
     if (randNum1 === 1 && hollin > 0 && lives > 0){
@@ -208,22 +214,22 @@ const midEarth1 = () => {
     $('.hollin').css('background', 'red');
     lorien2();
     advance();
-  } else if (randNum1 === 2 && redhorn > 0 && lives >= 0){
+  } else if (randNum1 === 2 && redhorn > 0 && lives > 0){
     $('.redhorn').css('background', 'red');
     lorien2();
     loseLives();
-  } else if(randNum1 === 2 && redhorn > 0 && lives < 0){
+  } else if(randNum1 === 2 && redhorn > 0 && lives <= 0){
     $('.redhorn').css('background', 'red');
     lose();
   } else if (randNum1 === 2){
     $('.redhorn').css('background', 'red');
     lorien2();
     advance();
-  }  else if (randNum1 === 3 && gateOfMoria > 0 && lives >= 0){
+  }  else if (randNum1 === 3 && gateOfMoria > 0 && lives > 0){
     $('.gateOfMoria').css('background', 'red');
     lorien2();
     loseLives();
-  } else if(randNum1 === 3 && gateOfMoria > 0 && lives < 0){
+  } else if(randNum1 === 3 && gateOfMoria > 0 && lives <= 0){
     $('.gateOfMoria').css('background', 'red');
     lose();
   } else if (randNum1 === 3){
@@ -235,33 +241,33 @@ const midEarth1 = () => {
 
 const midEarth2 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
-  if (randNum1 === 1 && moria > 0 && lives >= 0){
+  if (randNum1 === 1 && moria > 0 && lives > 0){
     $('.moria').css('background', 'red');
     rohan2();
     loseLives();
-} else if(randNum1 === 1 && moria > 0 && lives < 0){
+} else if(randNum1 === 1 && moria > 0 && lives <= 0){
     $('.moria').css('background', 'red');
     lose();
 } else if (randNum1 === 1){
   $('.moria').css('background', 'red');
   rohan2();
   advance();
-}  else if (randNum1 === 2 && lorien > 0 && lives >= 0){
+}  else if (randNum1 === 2 && lorien > 0 && lives > 0){
   $('.lorien').css('background', 'red');
   rohan2();
   loseLives();
-} else if(randNum1 === 2 && lorien > 0 && lives < 0){
+} else if(randNum1 === 2 && lorien > 0 && lives <= 0){
   $('.lorien').css('background', 'red');
   lose();
 } else if (randNum1 === 2){
   $('.lorien').css('background', 'red');
   rohan2();
   advance();
-} else if (randNum1 === 2 && fangorn > 0 && lives >= 0){
+} else if (randNum1 === 2 && fangorn > 0 && lives > 0){
   $('.fangorn').css('background', 'red');
   rohan2();
   loseLives();
-} else if(randNum1 === 2 && fangorn > 0 && lives < 0){
+} else if(randNum1 === 2 && fangorn > 0 && lives <= 0){
   $('.fangorn').css('background', 'red');
   lose();
 } else if (randNum1 === 3){
@@ -274,34 +280,34 @@ const midEarth2 = () => {
 const midEarth3 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
 
-  if (randNum1 === 1 && isengard > 0 && lives >= 0){
+  if (randNum1 === 1 && isengard > 0 && lives > 0){
     $('.isengard').css('background', 'red');
     aragorn();
     loseLives();
-} else if(randNum1 === 1 && isengard > 0 && lives < 0){
+} else if(randNum1 === 1 && isengard > 0 && lives <= 0){
     $('.isengard').css('background', 'red');
     lose();
 } else if (randNum1 === 1){
     $('.isengard').css('background', 'red');
     aragorn();
     advance();
-} else if (randNum1 === 2 && helmsDeep > 0 && lives >= 0){
+} else if (randNum1 === 2 && helmsDeep > 0 && lives > 0){
     $('.helmsDeep').css('background', 'red');
     aragorn();
     loseLives();
-} else if(randNum1 === 2 && helmsDeep > 0 && lives < 0){
+} else if(randNum1 === 2 && helmsDeep > 0 && lives <= 0){
     $('.helmsDeep').css('background', 'red');
     lose();
 } else if (randNum1 === 2){
     $('.helmsDeep').css('background', 'red');
     aragorn();
     advance();
-} else if (randNum1 === 3 && edoras > 0 && lives >= 0){
+} else if (randNum1 === 3 && edoras > 0 && lives > 0){
     $('.edoras').css('background', 'red');
     aragorn();
     loseLives();
-} else if(randNum1 === 3 && edoras > 0 && lives < 0){
-    $('.brandywine').css('background', 'red');
+} else if(randNum1 === 3 && edoras > 0 && lives <= 0){
+    $('.edoras').css('background', 'red');
     lose();
 } else if (randNum1 === 3){
     $('.edoras').css('background', 'red');
@@ -313,33 +319,33 @@ const midEarth3 = () => {
 const midEarth4 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
 
-  if (randNum1 === 1 && paths > 0 && lives >= 0){
+  if (randNum1 === 1 && paths > 0 && lives > 0){
     $('.paths').css('background', 'red');
     gondor2();
     loseLives();
-} else if(randNum1 === 1 && paths > 0 && lives < 0){
+} else if(randNum1 === 1 && paths > 0 && lives <= 0){
     $('.paths').css('background', 'red');
     lose();
 } else if (randNum1 === 1){
   $('.paths').css('background', 'red');
   gondor2();
   advance();
-} else if (randNum1 === 2 && ithilien > 0 && lives >= 0){
+} else if (randNum1 === 2 && ithilien > 0 && lives > 0){
   $('.ithilien').css('background', 'red');
   gondor2();
   loseLives();
-} else if(randNum1 === 2 && ithilien > 0 && lives < 0){
+} else if(randNum1 === 2 && ithilien > 0 && lives <= 0){
   $('.ithilien').css('background', 'red');
   lose();
 } else if (randNum1 === 2){
   $('.ithilien').css('background', 'red');
   gondor2();
   advance();
-} if (randNum1 === 3 && argonath > 0 && lives >= 0){
+} if (randNum1 === 3 && argonath > 0 && lives > 0){
   $('.argonath').css('background', 'red');
   endShire();
   loseLives();
-} else if(randNum1 === 3 && argonath > 0 && lives < 0){
+} else if(randNum1 === 3 && argonath > 0 && lives <= 0){
   $('.argonath').css('background', 'red');
   lose();
 } else if (randNum1 === 3){
@@ -358,27 +364,35 @@ const midEarth5 = () => {
 const mordor1 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
 
-  if (randNum1 === 1 && osgiliath > 0 && lives >= 0){
+  if (randNum1 === 1 && osgiliath > 0 && lives > 0){
     $('.osgiliath').css('background', 'red');
     m2();
     loseLives();
-} else if(randNum1 === 1 && argonath > 0 && lives < 0){
-    $('.argonath').css('background', 'red');
+} else if(randNum1 === 1 && osgiliath > 0 && lives <= 0){
+    $('.osgiliath').css('background', 'red');
     lose();
 } else if (randNum1 === 1){
     $('.osgiliath').css('background', 'red');
     m2();
     advance();
-}  else if (randNum1 === 2 && deadMarshes > 0){
-    $('.deadMarshes').css('background', 'red');
-    lose();
+} else if (randNum1 === 2 && deadMarshes > 0 && lives > 0){
+  $('.deadMarshes').css('background', 'red');
+  m2();
+  loseLives();
+} else if(randNum1 === 2 && deadMarshes > 0 && lives <= 0){
+  $('.deadMarshes').css('background', 'red');
+  lose();
 } else if (randNum1 === 2){
     $('.deadMarshes').css('background', 'red');
     m2();
     advance();
-}  else if (randNum1 === 3 && ephelDuath > 0){
-    $('.ephelDuath').css('background', 'red');
-    lose();
+} else if (randNum1 === 1 && ephelDuath > 0 && lives > 0){
+  $('.ephelDuath').css('background', 'red');
+  m2();
+  loseLives();
+} else if(randNum1 === 1 && ephelDuath > 0 && lives <= 0){
+  $('.ephelDuath').css('background', 'red');
+  lose();
 } else if (randNum1 === 3){
     $('.ephelDuath').css('background', 'red');
     m2();
@@ -388,33 +402,33 @@ const mordor1 = () => {
 
 const mordor2 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
-  if (randNum1 === 1 && morgul > 0 && lives >= 0){
+  if (randNum1 === 1 && morgul > 0 && lives > 0){
     $('.morgul').css('background', 'red');
     m3();
     loseLives();
-} else if(randNum1 === 1 && morgul > 0 && lives < 0){
+} else if(randNum1 === 1 && morgul > 0 && lives <= 0){
     $('.morgul').css('background', 'red');
     lose();
 } else if (randNum1 === 1){
     $('.morgul').css('background', 'red');
     m3();
     advance();
-} if (randNum1 === 2 && shelob > 0 && lives >= 0){
+} if (randNum1 === 2 && shelob > 0 && lives > 0){
   $('.shelob').css('background', 'red');
   m3();
   loseLives();
-} else if(randNum1 === 2 && shelob > 0 && lives < 0){
+} else if(randNum1 === 2 && shelob > 0 && lives <= 0){
   $('.shelob').css('background', 'red');
   lose();
 } else if (randNum1 === 2){
     $('.shelob').css('background', 'red');
     m3();
     advance();
-}  if (randNum1 === 3 && gate > 0 && lives >= 0){
+}  if (randNum1 === 3 && gate > 0 && lives > 0){
   $('.gate').css('background', 'red');
   m3();
   loseLives();
-} else if(randNum1 === 3 && gate > 0 && lives < 0){
+} else if(randNum1 === 3 && gate > 0 && lives <= 0){
   $('.gate').css('background', 'red');
   lose();
 } else if (randNum1 === 3){
@@ -426,22 +440,22 @@ const mordor2 = () => {
 
 const mordor3 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
-  if (randNum1 === 1 && gorgorath > 0 && lives >= 0){
+  if (randNum1 === 1 && gorgorath > 0 && lives > 0){
     $('.gorgorath').css('background', 'red');
     m3();
     loseLives();
-} else if(randNum1 === 1 && gorgorath > 0 && lives < 0){
-    $('.gorgorath').css('background', 'red');
-    lose();
+} else if(randNum1 === 1 && gorgorath > 0 && lives <= 0){
+  $('.gorgorath').css('background', 'red');
+  lose();
 } else if (randNum1 === 1){
   $('.gorgorath').css('background', 'red');
   m3();
   advance();
-} if (randNum1 === 1 && baradDur > 0 && lives >= 0){
+} if (randNum1 === 2 && baradDur > 0 && lives > 0){
   $('.baradDur').css('background', 'red');
   m3();
   loseLives();
-} else if(randNum1 === 1 && baradDur > 0 && lives < 0){
+} else if(randNum1 === 2 && baradDur > 0 && lives <= 0){
   $('.baradDur').css('background', 'red');
   lose();
 } else if (randNum1 === 2){
@@ -453,11 +467,10 @@ const mordor3 = () => {
 
 const mordor4 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
-  if (randNum1 === 1 && doom > 0){
+  if (randNum1 === 1 && doom > 0 && lives <= 0){
   $('.doom').css('background', 'red');
   lose();
-  } else if (randNum1 === 1){
-  $('.doom').css('background', 'red');
+} else {
   win();
   }
 }
@@ -704,12 +717,6 @@ $('.argonath').on('click', (e) => {
 $('#start').on('click', (e) => {
   $('#hobbits').show();
   lives += 1
-  theForest = 0;
-  theDowns = 0;
-  hobbiton = 0;
-  $('.hobbiton').css('background', 'green').text('Hobbiton')
-  $('.theDowns').css('background', 'gray')
-  $('.theForest').css('background', 'darkgreen')
 })
 
 })
