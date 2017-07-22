@@ -41,21 +41,9 @@ let gate = 0;
 
 
 
-$('#hobbits').hide();
-$('#midShire').hide();
-$('#endShire').hide();
-$('#safe').hide();
-$('#earlyME').hide();
-$('#lorien').hide();
-$('#rohan').hide();
-$('#aragorn').hide();
-$('#gondor').hide();
-$('#mordor1').hide();
-$('#mordor2').hide();
-$('#mordor3').hide();
-$('#mordor4').hide();
-// $('#eriador').hide();
-// $('#mordor').hide();
+$('#theShire').hide();
+$('#middleEarth').hide();
+$('#mordor').hide();
 
 // Shire Round 1
 const shire1 = () => {
@@ -198,7 +186,7 @@ const shire4 = () => {
     alert('You have reached Rivendell and gained companions. You now have additional hit points');
     lives+
     console.log(lives);
-    $('#earlyME').show();
+    $('#middleEarth').show();
 }
 
 const midEarth1 = () => {
@@ -358,6 +346,7 @@ const midEarth5 = () => {
   lives+
   console.log(lives)
   alert('You have made it safely to Mordor. Now for the final push');
+  $('#mordor').show();
   m1();
 }
 
@@ -500,7 +489,7 @@ const lorien2 = () => {
   $('#lorien').show();
 }
 const win = () => {
-  alert('You win')
+  alert('The ring has been destroyed!')
 }
 const rohan2 = () => {
   $('#rohan').show();
@@ -715,7 +704,8 @@ $('.argonath').on('click', (e) => {
 })
 
 $('#start').on('click', (e) => {
-  $('#hobbits').show();
+  $('#theShire').show();
+
   lives += 1
 })
 
