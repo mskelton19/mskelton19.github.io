@@ -563,7 +563,7 @@ $('.crickhollow').on('click', (e) => {
 })
 
 $('.farmer').on('click', (e) => {
-  $('.farmer').text('Farmer Maggot*');
+  $('.farmer').text('Farmer*');
   farmer++
   shire1();
 })

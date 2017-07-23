@@ -2,28 +2,51 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   /*background-image: url('http://cdn.playbuzz.com/cdn/f28e050d-fc34-4148-99a5-59a30be5cbd4/398e43ff-24de-49a2-8d52-79d08f997cb2.jpg')*/
+  background-position: top;
+  background-image: url('http://www.donsmaps.com/images29/middleearthsm.jpg');
+  background-size: cover;
+}
+
+.first {
+  margin: 35px;
+  margin-bottom: 0px;
+}
+
+#counter {
+  color: white;
+}
+
+.first {
+  color: white;
 }
 
 #theShire {
   /*border: 1px solid black;*/
   text-align: center;
   /*background-color: darkgreen;*/
-  border:1px solid black;
+  position: relative;
+  right: 425px;
+  font-size: 16px;
 }
 
 #bagEnd {
   text-align: center;
   /*background-color: lightgreen;*/
+  position: relative;
+  top: 50px;
+  right: 425px;
+
 }
 
 #bagEnd h3 {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkgreen;
   border-radius: 25%;
   color: white;
+  position: relative;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0d/a3/fe/e5/bag-end.jpg')
+  background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0d/a3/fe/e5/bag-end.jpg');
 }
 
 #bagEnd button {
@@ -43,106 +66,123 @@ div h3 {
 .hobbiton {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5leBj1rGIbcVj0FZ2aocieKrAflUFJgZBSEF0R9_z4Zq7WdH');
   border: 1px solid brown;
-  padding: 2em;
+  padding: 1em;
   color: yellow;
-  width: 150px;
+  width: 95px;
+  font-size: 16px;
 }
 
 .buckland {
   background-position: center center;
   background-image: url('http://static.wixstatic.com/media/470378_1f30523464d87109999d18f9dd73f2e1.jpg_1024');
   border: 1px solid brown;
-  padding: 2em;
+  padding: 1em;
   color: yellow;
-  width: 175px;
+  width: 95px;
+  font-size: 16px;
 }
 
 .farmer {
   background-position: center;
   background-image: url('http://users.bestweb.net/~jfgm/Mushrooms%20Website/Images/Tim%20Kirk%20Maggots%20Farm.jpg');
   border: 1px solid brown;
-  padding: 2em;
+  padding: 1em;
   color: yellow;
-  width: 175px;
+  width: 95px;
+  font-size: 16px;
 }
 
 .brandywine {
   background-position: center;
   background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/7/72/BrandywineBridgeLOTRO.jpg/revision/latest?cb=20120905211158');
   border: 1px solid black;
-  padding: 2em;
-  color: white;
-  width: 175px;
+  padding: 1em;
+  color: yellow;
+  width: 95px;
+  font-size: 12px;
 }
 
 .theForest {
-  background-position: center center;
+  background-position: center;
   background-image: url('https://qph.ec.quoracdn.net/main-qimg-2c4f366a20340742468f596eafb787fb');
   border: 1px solid green;
-  padding: 2em;
-  width: 175px;
-  color: wh/≥ite;
+  padding: 1em;
+  color: yellow;
+  width: 95px;
+  font-size: 15px;
 }
 
 .crickhollow {
   background-position: center;
   background-image: url('https://vignette2.wikia.nocookie.net/lotr/images/d/df/Crickhollow.jpg/revision/latest?cb=20120309214744');
   border: 1px solid brown;
-  padding: 2em;
+  padding: 1em;
   color: yellow;
-  width: 150px;
+  width: 95px;
+  font-size: 16px;
 }
 
 .bree {
   background-position: center center;
   background-image: url('https://s-media-cache-ak0.pinimg.com/originals/61/1d/8d/611d8d06614d04527bee114f7146fcd3.jpg');
   border: 1px solid green;
-  padding: 2em;
-  color: white;
-  width: 175px;
+  padding: 1em;
+  color: yellow;
+  width: 95px;
+  font-size: 16px;
 }
 
 .amunSul {
   background-position: center;
   background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/a/ac/Imagess.jpg/revision/latest?cb=20130706004959');
   border: 1px solid brown;
-  padding: 2em;
+  padding: 1em;
   color: yellow;
-  width: 150px;
+  width: 95px;
+  font-size: 16px;
 }
 .barrowDowns {
   background-position: center;
   background-image: url('http://vignette2.wikia.nocookie.net/lotr/images/4/42/Barrow-downs%2C_Cardolan%27s_capital.JPG/revision/latest?cb=20090917154715');
   border: 1px solid green;
-  padding: 2em;
-  color: white;
-  width: 175px;
+  padding: 1em;
+  color: yellow;
+  width: 95px;
+  font-size: 14.5px;
 }
 .bree {
   background-position: center;
   background-image: url('https://s-media-cache-ak0.pinimg.com/originals/61/1d/8d/611d8d06614d04527bee114f7146fcd3.jpg');
   border: 1px solid green;
-  padding: 2em;
-  color: white;
-  width: 175px;
+  padding: 1em;
+  color: yellow;
+  width: 95px;
+  font-size: 16px;
 }
 
 .rivendell {
   background-position: center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeox8LC2nxifDQ_5s_i8dWgPXvFXsdxG_rPgz6As57620qf8a');
   border: 1px solid darkblue;
-  padding: 2em;
-  color: white;
-  width: 175px;
+  padding: 1em;
+  color: yellow;
+  width: 95px;
+  font-size: 16px;
+}
+
+#middleEarth {
+  position: relative;
+  bottom: 350px;
 }
 
 .moria {
   background-position: center center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8D_vSpGYrZvXfMXJtLzySArg_TyngYliPOjsxj_LNjoOt9pHnZA');
   border: 1px solid black;
-  padding: 2em;
-  color: white;
-  width: 175px;
+  padding: 1em;
+  color: yellow;
+  width: 95px;
+  font-size: 16px;
 }
 
 #middleEarth {
@@ -150,189 +190,215 @@ div h3 {
 }
 
 .hollin {
-  padding: 2em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
   text-align: center;
+  padding: 1em;
+  width: 95px;
+  font-size: 16px;
 }
 
 .redhorn {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
+  width: 95px;
   text-align: center;
+  font-size: 16px;
 }
 
 .gateOfMoria {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
+  width: 95px;
   text-align: center;
+  font-size: 14px;
 }
 
 .moria {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
+  width: 95px;
   text-align: center;
+  font-size: 14px;
 }
 
 .lorien {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
+  width: 95px;
   text-align: center;
+  font-size: 16px;
 }
 
 .fangorn {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
+  width: 95px;
   text-align: center;
+  font-size: 15px;
 }
 
 .isengard {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmDvbI9jAIBoOYxmNUy8ZIY1yydgzoBd-xHxvIT3OyacrLfGZ4');
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: white;
-  width: 200px;
+  width: 95px;
   text-align: right;
+  font-size: 16px;
 }
 
 .helmsDeep {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
+  width: 95px;
   text-align: center;
+  font-size: 16px;
 }
 
 .edoras {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
+  width: 95px;
   text-align: center;
+  font-size: 16px;
 }
 
 .paths {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
+  width: 95px;
   text-align: center;
+  font-size: 14px;
 }
 
 .tirith {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
+  width: 95px;
   text-align: center;
+  font-size: 16px;
 }
 
 .argonath {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkblue;
   color: black;
-  width: 200px;
+  width: 95px;
   text-align: center;
+  font-size: 16px;
 }
 .rohan {
   background-position: center center;
   background-image: url('https://vignette2.wikia.nocookie.net/edain-mod/images/a/a1/Edoras.jpeg/revision/latest?cb=20160108131229');
-  padding: 2em;
+  padding: 1em;
   border: 1px solid tan;
   color: white;
-  width: 200px;
+  width: 95px;
+  font-size: 16px;
 }
 
 .ithilien {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid tan;
   color: black;
-  width: 200px;
+  width: 95px;
+  font-size: 16px;
 }
 .gondor {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxuJQu5-F-DHBru6KXEm5blx2riECiizAlQvhMcw6322mxzXZO');
-  padding: 2em;
+  padding: 1em;
   border: 1px solid ivory;
   color: ivory;
-  width: 200px;
+  width: 95px;
   text-align: right;
+  font-size: 16px;
 }
 
 #mordor {
   /*background-color: black;*/
   text-align: center;
+  position: relative;
+  left: 450px;
+  bottom: 615px;
 }
 
 .osgiliath {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
-  width: 250px;
+  width: 95px;
+  font-size: 16px;
 }
 .deadMarshes {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
-  width: 250px;
+  width: 95px;
+  font-size: 16px;
 }
 .ephelDuath {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
-  width: 250px;
+  width: 95px;
+  font-size: 16px;
 }
 .shelob {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
-  width: 250px;
+  width: 95px;
+  font-size: 16px;
 }
 .gorgorath {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
-  width: 250px;
+  width: 95px;
+  font-size: 16px;
 }
 .mtDoom {
   background-position: center center;
   background-image: url('http://www.dylancolestudio.com/Matte/ROTK/images/573_22_MP_4k_v01.jpg');
-  padding: 2em;
+  padding: 1em;
   border: 1px solid orange;
   color: red;
-  width: 225px;
+  width: 95px;
+  font-size: 16px;
 }
 .baradDur {
-  padding: 2em;
+  padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
-  width: 250px;
+  width: 95px;
+  font-size: 16px;
 }
 
 .morgul {
   background-position: center center;
   background-image: url('https://i.ytimg.com/vi/MPVo2KDOosk/hqdefault.jpg');
-  padding: 2em;
+  padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
-  width: 250px;
+  width: 95px;
+  font-size: 16px;
 }
 
 .gate {
   background-position: center center;
   background-image: url('https://vignette3.wikia.nocookie.net/lotr/images/5/57/Black_gate.png/revision/latest?cb=20131113193151');
-  padding: 2em;
+  padding: 1em;
   border: 1px solid darkgray;
   color: darkgray;
-  width: 250px;
+  width: 95px;
 }
