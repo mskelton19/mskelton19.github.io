@@ -28,6 +28,7 @@ let tirith = 0;
 let edoras = 0;
 let helmsDeep = 0;
 let ithilien = 0;
+let morgul = 0;
 let pts = 0;
 let lives = 0;
 let thirdRound = 0;
@@ -38,6 +39,7 @@ let deadMarshes = 0;
 let shelob = 0;
 let baradDur = 0;
 let gate = 0;
+let round = 0;
 
 $('#theShire').hide();
 $('#hobbits').hide();
@@ -59,7 +61,6 @@ $('#mordor4').hide();
 // Shire Round 1
 const shire1 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
-  console.log(lives)
   if(randNum1 === 1 && hobbiton > 0 && lives > 0) {
     $('.hobbiton').css('background-position', 'center center');
     $('.hobbiton').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
@@ -68,9 +69,10 @@ const shire1 = () => {
     loseLives();
     livesLeft();
   } else if (randNum1 === 1 && hobbiton > 0 && lives <= 0) {
-    $('.hobbiton').css('background-position', 'center center');
+    $('.hobbiton').css('background-position', 'center');
     $('.hobbiton').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
     $('.hobbiton').css('color', 'white');
+    stopClicks();
     lose();
   } else if (randNum1 === 1){
     $('.hobbiton').css('background-position', 'center center');
@@ -199,10 +201,13 @@ const shire3 = () => {
 }
 
 const shire4 = () => {
-    alert('You have reached Rivendell and gained companions. You now have additional hit points');
-    lives+
+    // alert('You have reached Rivendell and gained companions. You now have additional hit points');
+    // lives+=1
+    round+=1
     livesLeft();
+    $('#theShire').hide();
     $('#middleEarth').show();
+    advance();
 }
 
 const midEarth1 = () => {
@@ -371,10 +376,12 @@ const midEarth4 = () => {
 }
 }
 const midEarth5 = () => {
-  lives+
+  lives+=1
+  round+=1
   livesLeft();
-  alert('You have made it safely to Mordor. Now for the final push');
+  $('#middleEarth').hide();
   $('#mordor').show();
+  advance2();
   m1();
 }
 
@@ -496,6 +503,7 @@ const mordor4 = () => {
   $('.doom').css('background', 'red');
   lose();
 } else if (randNum1 === 2){
+  pts+=10
   win();
   }
 }
@@ -514,17 +522,22 @@ const loseLives = () => {
 const advance = () => {
   pts++
   $('.scoreboard').text('Scoreboard: ' + pts);
+  $('.round').text('Round: ' + round);
   alert("You have avoided Sauron's gaze. The journey continues. Keep it secret, keep it safe")
 }
 const advance2 = () => {
   pts+=3
   $('.scoreboard').text('Scoreboard: ' + pts);
+  $('.round').text('Round: ' + round)
   alert("You have avoided Sauron's gaze. The journey continues. Keep it secret, keep it safe")
 }
 const advance3 = () => {
   pts+=5
   $('.scoreboard').text('Scoreboard: ' + pts);
   alert("You have avoided Sauron's gaze. The journey continues. Keep it secret, keep it safe")
+}
+const stopClicks = () => {
+  $('h3').stop('click')
 }
 const midShire = () => {
   $('#midShire').show();
@@ -564,19 +577,23 @@ const m3 = () => {
 const m4 = () => {
   $('#mordor4').show();
 }
-$('.hobbiton').on('click', (e) => {
+const background = () => {
+  $('.this').css('background', 'red');
+}
+$('.hobbiton').one('click', (e) => {
   $('.hobbiton').text('Hobbiton*');
   hobbiton++
   shire1();
+  stopClicks();
 })
 
-$('.crickhollow').on('click', (e) => {
+$('.crickhollow').one('click', (e) => {
   $('.crickhollow').text('Crickhollow*');
   crickhollow++
   shire1();
 })
 
-$('.farmer').on('click', (e) => {
+$('.farmer').one('click', (e) => {
   $('.farmer').text('Farmer*');
   farmer++
   shire1();
@@ -613,7 +630,7 @@ $('.barrowDowns').on('click', (e) => {
 })
 
 $('.amunSul').on('click', (e) => {
-  $('.amunSul').text("Amon Sul");
+  $('.amunSul').text("Amon Sul*");
   amunSul++
   shire3();
 })
@@ -757,9 +774,11 @@ $('.argonath').on('click', (e) => {
   midEarth4();
 })
 
-$('#start').on('click', (e) => {
+$('#start').one('click', (e) => {
   $('#theShire').show();
   $('#hobbits').show();
+  $('#start').off('click');
+  round+=1
   lives += 1
   livesLeft();
 })
