@@ -503,7 +503,6 @@ const mordor4 = () => {
   $('.doom').css('background', 'red');
   lose();
 } else if (randNum1 === 2){
-  pts+=10
   win();
   }
 }
@@ -552,6 +551,8 @@ const lorien2 = () => {
   $('#lorien').show();
 }
 const win = () => {
+  pts+=10;
+  $('.scoreboard').text('Scoreboard: ' + pts);
   alert('The ring has been destroyed!')
 }
 const rohan2 = () => {

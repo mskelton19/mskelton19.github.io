@@ -1,7 +1,6 @@
 body {
-  background-repeat: no-repeat center center fixed;
-  /*background-position: center center;*/
-  background-position: top;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url('http://www.donsmaps.com/images29/middleearthsm.jpg');
   background-size: cover;
 }
@@ -9,6 +8,7 @@ body {
   text-align: center;
 }
 .first {
+  padding: 1em;
   margin: 35px;
   margin-bottom: 0px;
   color: yellow;
@@ -17,6 +17,7 @@ body {
 }
 
 .rd2 {
+  padding: 1em;
   margin: 35px;
   margin-bottom: 0px;
   color: yellow;
@@ -24,6 +25,7 @@ body {
   background-color: green;
 }
 .rd3 {
+  padding: 1em;
   margin: 35px;
   margin-bottom: 0px;
   color: red;
@@ -63,7 +65,7 @@ body {
 }
 
 #bagEnd h3 {
-  padding: 1em;
+  padding: 2em;
   border: 1px solid darkgreen;
   width: 200px;
   border-radius: 25%;
@@ -328,7 +330,7 @@ div h3 {
   background-image: url('https://upload.wikimedia.org/wikipedia/en/4/4f/Roturn_King-Minas_Tirith.jpg');
   padding: 1em;
   border: 1px solid darkblue;
-  color: black;
+  color: white;
   width: 95px;
   text-align: center;
   font-size: 16px;
