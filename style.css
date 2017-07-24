@@ -16,7 +16,7 @@ body {
   color: black;
   text-align: center;
   position: relative;
-  left: 550px;
+  left: 750px;
   bottom: 90px;
   width: 250px;
   border: 4px solid saddlebrown;
@@ -28,8 +28,8 @@ body {
   text-align: center;
   /*background-color: darkgreen;*/
   position: relative;
-  right: 425px;
-  bottom: 50px;
+  right: 375px;
+  bottom: 25px;
   font-size: 16px;
 }
 
@@ -38,20 +38,9 @@ body {
   /*background-color: lightgreen;*/
   position: relative;
   top: 50px;
-  right: 425px;
+  right: 375px;
 }
-.Round1 {
-  margin: 0;
-}
-.Round2 {
-  margin: 0;
-}
-.Round3 {
-  margin: 0;
-}
-.lives {
-  margin: 0;
-}
+
 #bagEnd h3 {
   padding: 1em;
   border: 1px solid darkgreen;
@@ -187,7 +176,8 @@ div h3 {
 
 #middleEarth {
   position: relative;
-  bottom: 350px;
+  bottom: 400px;
+  left: 50px;
 }
 
 .moria {
@@ -366,8 +356,8 @@ div h3 {
   /*background-color: black;*/
   text-align: center;
   position: relative;
-  left: 450px;
-  bottom: 600px;
+  left: 475px;
+  bottom: 800px;
 }
 
 .osgiliath {
