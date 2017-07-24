@@ -1,7 +1,6 @@
 body {
-  background-repeat: no-repeat;
-  background-position: center center;
-  /*background-image: url('http://cdn.playbuzz.com/cdn/f28e050d-fc34-4148-99a5-59a30be5cbd4/398e43ff-24de-49a2-8d52-79d08f997cb2.jpg')*/
+  background-repeat: no-repeat center center fixed;
+  /*background-position: center center;*/
   background-position: top;
   background-image: url('http://www.donsmaps.com/images29/middleearthsm.jpg');
   background-size: cover;
@@ -10,14 +9,18 @@ body {
 .first {
   margin: 35px;
   margin-bottom: 0px;
+  color: brown;
 }
 
 #counter {
-  color: white;
-}
-
-.first {
-  color: white;
+  color: black;
+  text-align: center;
+  position: relative;
+  left: 550px;
+  bottom: 90px;
+  width: 250px;
+  border: 4px solid saddlebrown;
+  background-color: green;
 }
 
 #theShire {
@@ -26,6 +29,7 @@ body {
   /*background-color: darkgreen;*/
   position: relative;
   right: 425px;
+  bottom: 50px;
   font-size: 16px;
 }
 
@@ -35,12 +39,23 @@ body {
   position: relative;
   top: 50px;
   right: 425px;
-
 }
-
+.Round1 {
+  margin: 0;
+}
+.Round2 {
+  margin: 0;
+}
+.Round3 {
+  margin: 0;
+}
+.lives {
+  margin: 0;
+}
 #bagEnd h3 {
   padding: 1em;
   border: 1px solid darkgreen;
+  width: 200px;
   border-radius: 25%;
   color: white;
   position: relative;
@@ -176,7 +191,7 @@ div h3 {
 }
 
 .moria {
-  background-position: center center;
+  background-position: center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8D_vSpGYrZvXfMXJtLzySArg_TyngYliPOjsxj_LNjoOt9pHnZA');
   border: 1px solid black;
   padding: 1em;
@@ -190,8 +205,10 @@ div h3 {
 }
 
 .hollin {
+  background-position: center;
+  background-image: url('http://corecanvas.s3.amazonaws.com/theonering-0188db0e/gallery/original/fellowship010823a.jpg');
   border: 1px solid darkblue;
-  color: black;
+  color: white;
   text-align: center;
   padding: 1em;
   width: 95px;
@@ -199,6 +216,8 @@ div h3 {
 }
 
 .redhorn {
+  background-position: center;
+  background-image: url('http://c252289.r89.cf3.rackcdn.com/18526.jpg');
   padding: 1em;
   border: 1px solid darkblue;
   color: black;
@@ -208,6 +227,8 @@ div h3 {
 }
 
 .gateOfMoria {
+  background-position: center;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8D_vSpGYrZvXfMXJtLzySArg_TyngYliPOjsxj_LNjoOt9pHnZA');
   padding: 1em;
   border: 1px solid darkblue;
   color: black;
@@ -217,27 +238,33 @@ div h3 {
 }
 
 .moria {
+  background-position: center;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/55/f3/f8/55f3f8baed7fa2300812707b2fb80183.jpg');
   padding: 1em;
   border: 1px solid darkblue;
-  color: black;
+  color: white;
   width: 95px;
   text-align: center;
   font-size: 14px;
 }
 
 .lorien {
+  background-position: center center;
+  background-image: url('https://vignette1.wikia.nocookie.net/lotr/images/7/7c/Carasgaladhon.jpg/revision/latest?cb=20070222040838');
   padding: 1em;
   border: 1px solid darkblue;
-  color: black;
+  color: yellow;
   width: 95px;
   text-align: center;
   font-size: 16px;
 }
 
 .fangorn {
+  background-position: center;
+  background-image: url('http://www.thelandofshadow.com/wp-content/uploads/2016/07/FangornLarge1.jpg');
   padding: 1em;
   border: 1px solid darkblue;
-  color: black;
+  color: green;
   width: 95px;
   text-align: center;
   font-size: 15px;
@@ -254,33 +281,41 @@ div h3 {
 }
 
 .helmsDeep {
+  background-position: center;;
+  background-image: url('https://www.thefandomentals.com/wp-content/uploads/2017/04/helms09.jpg');
   padding: 1em;
   border: 1px solid darkblue;
-  color: black;
+  color: white;
   width: 95px;
   text-align: center;
   font-size: 16px;
 }
 
 .edoras {
+  background-position: center;
+  background-image: url('https://vignette1.wikia.nocookie.net/lotr/images/2/2e/Edoras.jpg/revision/latest?cb=20100325163858');
   padding: 1em;
   border: 1px solid darkblue;
-  color: black;
+  color: lightgray;
   width: 95px;
   text-align: center;
   font-size: 16px;
 }
 
 .paths {
+  background-position: center;;
+  background-image: url('http://www.thelandofshadow.com/wp-content/uploads/2016/07/PathsDead1.jpg');
   padding: 1em;
   border: 1px solid darkblue;
-  color: black;
+  color: lightgreen;
   width: 95px;
   text-align: center;
   font-size: 14px;
 }
 
 .tirith {
+  background-position: center;;
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/4/4f/Roturn_King-Minas_Tirith.jpg');
   padding: 1em;
   border: 1px solid darkblue;
   color: black;
@@ -290,6 +325,7 @@ div h3 {
 }
 
 .argonath {
+  background-image: url('https://i.stack.imgur.com/267fr.jpg');
   padding: 1em;
   border: 1px solid darkblue;
   color: black;
@@ -298,7 +334,7 @@ div h3 {
   font-size: 16px;
 }
 .rohan {
-  background-position: center center;
+  background-position: center;;
   background-image: url('https://vignette2.wikia.nocookie.net/edain-mod/images/a/a1/Edoras.jpeg/revision/latest?cb=20160108131229');
   padding: 1em;
   border: 1px solid tan;
@@ -308,9 +344,11 @@ div h3 {
 }
 
 .ithilien {
+  background-position: center;;
+  background-image: url('http://orig12.deviantart.net/36c7/f/2013/004/c/2/twelve_mile_delta_aka_ithilien_by_irissiel-d5qh04v.jpg');
   padding: 1em;
   border: 1px solid tan;
-  color: black;
+  color: yellow;
   width: 95px;
   font-size: 16px;
 }
@@ -329,10 +367,12 @@ div h3 {
   text-align: center;
   position: relative;
   left: 450px;
-  bottom: 615px;
+  bottom: 600px;
 }
 
 .osgiliath {
+  background-position: center;
+  background-image: url('http://www.historiarex.com/uploads/files/1413433857.jpg');
   padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
@@ -340,6 +380,8 @@ div h3 {
   font-size: 16px;
 }
 .deadMarshes {
+  background-position: center;
+  background-image: url('http://features.cgsociety.org/newgallerycrits/g06/369006/369006_1352980844_large.jpg');
   padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
@@ -347,6 +389,8 @@ div h3 {
   font-size: 16px;
 }
 .ephelDuath {
+  background-position: center;
+  background-image: url('http://features.cgsociety.org/newgallerycrits/g06/369006/369006_1352980844_large.jpg');
   padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
@@ -354,6 +398,8 @@ div h3 {
   font-size: 16px;
 }
 .shelob {
+  background-position: center;
+  background-image: url('http://www.frodolivesin.us/Shelob/9d500a80.jpg');
   padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
@@ -361,6 +407,8 @@ div h3 {
   font-size: 16px;
 }
 .gorgorath {
+  background-position: center;
+  background-image: url('http://elvenesse.net/blog/wp-content/uploads/2012/03/GorgorothPlain.jpg');
   padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
@@ -368,7 +416,7 @@ div h3 {
   font-size: 16px;
 }
 .mtDoom {
-  background-position: center center;
+  background-position: center;
   background-image: url('http://www.dylancolestudio.com/Matte/ROTK/images/573_22_MP_4k_v01.jpg');
   padding: 1em;
   border: 1px solid orange;
@@ -377,6 +425,8 @@ div h3 {
   font-size: 16px;
 }
 .baradDur {
+  background-position: center;
+  background-image: url('http://www.dylancolestudio.com/Matte/ROTK/images/573_GEN_4k_v02.jpg');
   padding: 1em;
   border: 1px solid gray;
   color: lightgreen;
@@ -385,7 +435,7 @@ div h3 {
 }
 
 .morgul {
-  background-position: center center;
+  background-position: center;
   background-image: url('https://i.ytimg.com/vi/MPVo2KDOosk/hqdefault.jpg');
   padding: 1em;
   border: 1px solid gray;

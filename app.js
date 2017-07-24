@@ -218,7 +218,7 @@ const midEarth1 = () => {
   } else if (randNum1 === 1){
     $('.hollin').css('background', 'red');
     lorien2();
-    advance();
+    advance2();
   } else if (randNum1 === 2 && redhorn > 0 && lives > 0){
     $('.redhorn').css('background', 'red');
     lorien2();
@@ -230,7 +230,7 @@ const midEarth1 = () => {
   } else if (randNum1 === 2){
     $('.redhorn').css('background', 'red');
     lorien2();
-    advance();
+    advance2();
   }  else if (randNum1 === 3 && gateOfMoria > 0 && lives > 0){
     $('.gateOfMoria').css('background', 'red');
     lorien2();
@@ -242,7 +242,7 @@ const midEarth1 = () => {
   } else if (randNum1 === 3){
     $('.gateOfMoria').css('background', 'red');
     lorien2();
-    advance();
+    advance2();
 }
 }
 
@@ -259,7 +259,7 @@ const midEarth2 = () => {
 } else if (randNum1 === 1){
   $('.moria').css('background', 'red');
   rohan2();
-  advance();
+  advance2();
 }  else if (randNum1 === 2 && lorien > 0 && lives > 0){
   $('.lorien').css('background', 'red');
   rohan2();
@@ -271,7 +271,7 @@ const midEarth2 = () => {
 } else if (randNum1 === 2){
   $('.lorien').css('background', 'red');
   rohan2();
-  advance();
+  advance2();
 } else if (randNum1 === 2 && fangorn > 0 && lives > 0){
   $('.fangorn').css('background', 'red');
   rohan2();
@@ -283,7 +283,7 @@ const midEarth2 = () => {
 } else if (randNum1 === 3){
   $('.fangorn').css('background', 'red');
   rohan2();
-  advance();
+  advance2();
 }
 }
 
@@ -301,7 +301,7 @@ const midEarth3 = () => {
 } else if (randNum1 === 1){
     $('.isengard').css('background', 'red');
     aragorn();
-    advance();
+    advance2();
 } else if (randNum1 === 2 && helmsDeep > 0 && lives > 0){
     $('.helmsDeep').css('background', 'red');
     aragorn();
@@ -313,7 +313,7 @@ const midEarth3 = () => {
 } else if (randNum1 === 2){
     $('.helmsDeep').css('background', 'red');
     aragorn();
-    advance();
+    advance2();
 } else if (randNum1 === 3 && edoras > 0 && lives > 0){
     $('.edoras').css('background', 'red');
     aragorn();
@@ -325,7 +325,7 @@ const midEarth3 = () => {
 } else if (randNum1 === 3){
     $('.edoras').css('background', 'red');
     aragorn();
-    advance();
+    advance2();
 }
 }
 
@@ -343,7 +343,7 @@ const midEarth4 = () => {
 } else if (randNum1 === 1){
   $('.paths').css('background', 'red');
   gondor2();
-  advance();
+  advance2();
 } else if (randNum1 === 2 && ithilien > 0 && lives > 0){
   $('.ithilien').css('background', 'red');
   gondor2();
@@ -355,7 +355,7 @@ const midEarth4 = () => {
 } else if (randNum1 === 2){
   $('.ithilien').css('background', 'red');
   gondor2();
-  advance();
+  advance2();
 } if (randNum1 === 3 && argonath > 0 && lives > 0){
   $('.argonath').css('background', 'red');
   endShire();
@@ -367,7 +367,7 @@ const midEarth4 = () => {
 } else if (randNum1 === 3){
   $('.argonath').css('background', 'red');
   gondor2();
-  advance();
+  advance2();
 }
 }
 const midEarth5 = () => {
@@ -392,7 +392,7 @@ const mordor1 = () => {
 } else if (randNum1 === 1){
     $('.osgiliath').css('background', 'red');
     m2();
-    advance();
+    advance3();
 } else if (randNum1 === 2 && deadMarshes > 0 && lives > 0){
   $('.deadMarshes').css('background', 'red');
   m2();
@@ -404,7 +404,7 @@ const mordor1 = () => {
 } else if (randNum1 === 2){
     $('.deadMarshes').css('background', 'red');
     m2();
-    advance();
+    advance3();
 } else if (randNum1 === 1 && ephelDuath > 0 && lives > 0){
   $('.ephelDuath').css('background', 'red');
   m2();
@@ -416,7 +416,7 @@ const mordor1 = () => {
 } else if (randNum1 === 3){
     $('.ephelDuath').css('background', 'red');
     m2();
-    advance();
+    advance3();
 }
 }
 
@@ -433,7 +433,7 @@ const mordor2 = () => {
 } else if (randNum1 === 1){
     $('.morgul').css('background', 'red');
     m3();
-    advance();
+    advance3();
 } if (randNum1 === 2 && shelob > 0 && lives > 0){
   $('.shelob').css('background', 'red');
   m3();
@@ -443,10 +443,10 @@ const mordor2 = () => {
   $('.shelob').css('background', 'red');
   lose();
 } else if (randNum1 === 2){
-    $('.shelob').css('background', 'red');
-    m3();
-    advance();
-}  if (randNum1 === 3 && gate > 0 && lives > 0){
+  $('.shelob').css('background', 'red');
+  m3();
+  advance3();
+} if (randNum1 === 3 && gate > 0 && lives > 0){
   $('.gate').css('background', 'red');
   m3();
   loseLives();
@@ -457,15 +457,15 @@ const mordor2 = () => {
 } else if (randNum1 === 3){
   $('.gate').css('background', 'red');
   m3();
-  advance();
+  advance3();
 }
 }
 
 const mordor3 = () => {
-  const randNum1 = Math.floor(Math.random() * 3) + 1;
+  const randNum1 = Math.floor(Math.random() * 2) + 1;
   if (randNum1 === 1 && gorgorath > 0 && lives > 0){
     $('.gorgorath').css('background', 'red');
-    m3();
+    m4();
     loseLives();
     livesLeft();
 } else if(randNum1 === 1 && gorgorath > 0 && lives <= 0){
@@ -473,11 +473,11 @@ const mordor3 = () => {
   lose();
 } else if (randNum1 === 1){
   $('.gorgorath').css('background', 'red');
-  m3();
-  advance();
+  m4();
+  advance3();
 } if (randNum1 === 2 && baradDur > 0 && lives > 0){
   $('.baradDur').css('background', 'red');
-  m3();
+  m4();
   loseLives();
   livesLeft();
 } else if(randNum1 === 2 && baradDur > 0 && lives <= 0){
@@ -485,17 +485,17 @@ const mordor3 = () => {
   lose();
 } else if (randNum1 === 2){
   $('.baradDur').css('background', 'red');
-  m3();
-  advance();
+  m4();
+  advance3();
 }
 }
 
 const mordor4 = () => {
-  const randNum1 = Math.floor(Math.random() * 3) + 1;
-  if (randNum1 === 1 && doom > 0 && lives <= 0){
+  const randNum1 = Math.floor(Math.random() * 2) + 1;
+  if (randNum1 === 1) {
   $('.doom').css('background', 'red');
   lose();
-} else {
+} else if (randNum1 === 2){
   win();
   }
 }
@@ -513,6 +513,16 @@ const loseLives = () => {
 }
 const advance = () => {
   pts++
+  $('.scoreboard').text('Scoreboard: ' + pts);
+  alert("You have avoided Sauron's gaze. The journey continues. Keep it secret, keep it safe")
+}
+const advance2 = () => {
+  pts+=3
+  $('.scoreboard').text('Scoreboard: ' + pts);
+  alert("You have avoided Sauron's gaze. The journey continues. Keep it secret, keep it safe")
+}
+const advance3 = () => {
+  pts+=5
   $('.scoreboard').text('Scoreboard: ' + pts);
   alert("You have avoided Sauron's gaze. The journey continues. Keep it secret, keep it safe")
 }
@@ -545,9 +555,13 @@ const m1 = () => {
 }
 
 const m2 = () => {
-  $('#mordor3').show();
+  $('#mordor2').show();
 }
 const m3 = () => {
+  $('#mordor3').show();
+}
+
+const m4 = () => {
   $('#mordor4').show();
 }
 $('.hobbiton').on('click', (e) => {
