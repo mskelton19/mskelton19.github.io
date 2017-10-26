@@ -47,6 +47,10 @@ let s4 = 0;
 let me1 = 0;
 let me2 = 0;
 let me3 = 0;
+let me4 = 0;
+let mr1 = 0;
+let mr2 = 0;
+let mr3 = 0;
 
 $('#theShire').hide();
 $('#hobbits').hide();
@@ -401,38 +405,47 @@ const midEarth4 = () => {
 
   if (randNum1 === 1 && paths > 0 && lives > 0){
     $('.paths').css('background', 'red');
+    me4++
     gondor2();
     loseLives();
     livesLeft();
 } else if(randNum1 === 1 && paths > 0 && lives <= 0){
     $('.paths').css('background', 'red');
+    me4++
     lose();
 } else if (randNum1 === 1){
   $('.paths').css('background', 'red');
+  me4++
   gondor2();
   advance2();
 } else if (randNum1 === 2 && ithilien > 0 && lives > 0){
   $('.ithilien').css('background', 'red');
+  me4++
   gondor2();
   loseLives();
   livesLeft();
 } else if(randNum1 === 2 && ithilien > 0 && lives <= 0){
   $('.ithilien').css('background', 'red');
+  me4++
   lose();
 } else if (randNum1 === 2){
   $('.ithilien').css('background', 'red');
+  me4++
   gondor2();
   advance2();
 } if (randNum1 === 3 && argonath > 0 && lives > 0){
   $('.argonath').css('background', 'red');
+  me4++
   endShire();
   loseLives();
   livesLeft();
 } else if(randNum1 === 3 && argonath > 0 && lives <= 0){
   $('.argonath').css('background', 'red');
+  me4++
   lose();
 } else if (randNum1 === 3){
   $('.argonath').css('background', 'red');
+  me4++
   gondor2();
   advance2();
 }
@@ -857,7 +870,7 @@ $('.isengard').on('click', (e) => {
 })
 
 $('.paths').on('click', (e) => {
-  if (me3 > 0) {
+  if (me4 > 0) {
   $('.ithilien').off('click');
 } else {
   $('.paths').text('Path of the Dead*');
@@ -867,11 +880,11 @@ $('.paths').on('click', (e) => {
 })
 
 $('.ithilien').on('click', (e) => {
-  if (me3 > 0) {
+  if (me4 > 0) {
   $('.ithilien').off('click');
 } else {
   $('.ithilien').text('Ithilien*');
-  tirith++
+  ithilien++
   midEarth4();
 }
 })
@@ -893,7 +906,7 @@ $('.mtDoom').on('click', (e) => {
 })
 //
 $('.morgul').on('click', (e) => {
-  if (mr1 > 0) {
+  if (mr2 > 0) {
   $('.morgul').off('click');
 }
   $('.morgul').text('Minas Morgul*');
@@ -902,41 +915,45 @@ $('.morgul').on('click', (e) => {
 })
 //
 $('.gate').on('click', (e) => {
-  if (mr1 > 0) {
+  if (mr2 > 0) {
   $('.gate').off('click');
-}
+} else {
   $('.gate').text('Black Gate*');
   blackGate++
   mordor2();
+}
 })
 $('.osgiliath').on('click', (e) => {
   if (mr1 > 0) {
   $('.osgiliath').off('click');
-}
+} else {
   $('.osgiliath').text("Osgiliath*");
   osgiliath++
   mordor1();
+}
 })
 //
 $('.deadMarshes').on('click', (e) => {
-  if (mr2 > 0) {
+  if (mr1 > 0) {
   $('.deadMarshes').off('click');
-}
+} else {
   $('.deadMarshes').text('The Dead Marshes*');
   deadMarshes++
   mordor1();
+}
 })
 //
 $('.ephelDuath').on('click', (e) => {
-  if (mr2 > 0) {
+  if (mr1 > 0) {
   $('.ephelDuath').off('click');
-}
+} else {
   $('.ephelDuath').text('The Ephel Duath*');
   ephelDuath++
   mordor1();
+}
 })
 $('.shelob').on('click', (e) => {
-  if (mr3 > 0) {
+  if (mr2 > 0) {
   $('.shelob').off('click');
 }
   $('.shelob').text("Shelob's Lair*");
@@ -945,7 +962,7 @@ $('.shelob').on('click', (e) => {
 })
 $('.gorgorath').on('click', (e) => {
   if (mr3 > 0) {
-  $('.ithilien').off('click');
+  $('.gorgorath').off('click');
 }
   $('.gorgorath').text("Gorgorath*");
   gorgorath++
@@ -953,17 +970,23 @@ $('.gorgorath').on('click', (e) => {
 })
 
 $('.baradDur').on('click', (e) => {
-  $('.baradDur').text('Barad Dur*');
+  if (mr3 > 0) {
   $('.baradDur').off('click');
-  baradDur++
+}
+  $('.baradDur').text("Barad Dur*");
+  gorgorath++
   mordor3();
 })
 
 $('.argonath').on('click', (e) => {
+  if (me4 > 0) {
+  $('.argonath').off('click');
+} else {
   $('.argonath').text('Argonath*');
   $('#start').off('click');
   argonath++
   midEarth4();
+}
 })
 
 $('#start').one('click', (e) => {
