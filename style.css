@@ -203,14 +203,13 @@ header {
 .rivendell {
   background-position: center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeox8LC2nxifDQ_5s_i8dWgPXvFXsdxG_rPgz6As57620qf8a');
-  border: 1px solid brown;
+  /*border: 1px solid brown;
   padding: 1em;
-  color: yellow;
-  width: 100%;
+  color: yellow;*/
   height: 100px;
   border-radius: 10%;
   margin: 0 auto;
-  font-size: 12px;
+  /*font-size: 12px;*/
 }
 
 .rd2 {
