@@ -52,6 +52,7 @@ let mr1 = 0;
 let mr2 = 0;
 let mr3 = 0;
 
+$('#counter').hide();
 $('#theShire').hide();
 $('#hobbits').hide();
 $('#midShire').hide();
@@ -989,13 +990,19 @@ $('.argonath').on('click', (e) => {
 }
 })
 
-$('#start').one('click', (e) => {
+$('#start').on('click', (e) => {
+  $('#counter').show();
   $('#theShire').show();
   $('#hobbits').show();
+  $('.bagEnd').hide();
   $('#start').off('click');
   round+=1
   lives += 1
   livesLeft();
+})
+
+$('.door').on('click', (e) => {
+
 })
 
 })
