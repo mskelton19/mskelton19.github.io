@@ -1,40 +1,261 @@
 body {
+  /*background-image: url('http://wallpapercraft.net/wp-content/uploads/2016/06/Lord-Of-The-Rings-Picture.jpg');*/
+  background-color: #5F9444;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-position: top;
-  background-image: url('http://www.donsmaps.com/images29/middleearthsm.jpg');
+  background-attachment: fixed;
   background-size: cover;
-}
-#container2 {
-  text-align: center;
 }
 
 header {
-  background-color: gray;
-  border: 1px solid black;
-  height: 75px;
+  text-align: center;
 }
 
-nav {
-  border: 1px solid black;
-  vertical-align: middle;
+#counter {
   text-align: center;
+  margin: 0 auto;
+  width: 250px;
+  border: 4px solid #DE7C39;
+  background-color: #474B57;
+  margin-top: 30px;
+  color: #DE7C39;
+  border-radius: 10%;
+}
+
+.door img {
+  position: relative;
+  left: 17.5px;
+}
+
+#theShire {
+  text-align: center;
+}
+.bagEnd {
+  text-align: center;
+  color: white;
+  height: 165px;
+}
+
+/*.door {
+  background: repeating-linear-gradient(
+    to right,
+    #07522B,
+    #07522B 10px,
+    #1A603F 10px,
+    #1A603F 20px
+  );
+  width: 12.5%;
+  border-radius: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: 5px solid #5C4033;
+}
+
+.bagEnd h3 {
+  position: relative;
+  top: 10.5%;
+}*/
+.bagEnd button {
+  margin: auto;
+  position: relative;
+  top: 17.5px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 10.5px;
+  left: -260px;
+}
+
+#start {
+  background-color: #B5A642;
+  color: white;
+  border: 1px solid #A67D3D;
+}
+
+#theShire {
+  position: relative;
+  top: 100px;
+  left: 0px;
+}
+
+.rd1 {
+  width: 30%;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-position: bottom;
+}
+.rd1 h6 {
+  color: white;
+  position: relative;
+  top: 190px;
+  /*left: 20px;*/
+}
+
+.hobbits {
+  width: 40%;
+  margin-top: 50px;
+  margin: 0 auto;
+}
+
+.hobbits button {
+  position: relative;
+  top: 18.5px;
+  color: yellow;
+  background-color: green;
+  border: 1px solid brown;
+}
+
+.hobbits .container {
+  margin-top: 25px;
+}
+
+.hobbiton {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5leBj1rGIbcVj0FZ2aocieKrAflUFJgZBSEF0R9_z4Zq7WdH');
+  border: 1px solid brown;
+  border-radius: 10%;
+  padding: 1em;
+  color: yellow;
+  width: 100%;
+  height: 100px;
+}
+
+.farmer {
+  background-position: center;
+  background-image: url('https://i.pinimg.com/236x/00/14/25/001425a870f2f8f3b2971603d8a312f9--lembang-farm-house.jpg');
+  border: 1px solid brown;
+  padding: 1em;
+  color: yellow;
+  width: 100%;
+  height: 100px;
+  border-radius: 10%;
+}
+.crickhollow {
+  background-image: url('https://c1.staticflickr.com/7/6006/5934736693_fbb2b4de79_b.jpg');
+  background-position: center;
+  border: 1px solid brown;
+  padding: 1em;
+  color: yellow;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  border-radius: 10%;
+}
+
+/*.chDoor {
+  background: repeating-linear-gradient(
+    to right,
+    #5C4033,
+    #5C4033 5px,
+    #855E42 5px,
+    #855E42 10px
+  );
+  height: 100%;
+  border-radius: 100%;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  top: 7.5%;
+}
+
+.chDoor .knobs {
+  position: relative;
+  left: 27.5px;
+}*/
+
+#midShire {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.buckland {
+  background-position: center center;
+  background-image: url('http://static.wixstatic.com/media/470378_1f30523464d87109999d18f9dd73f2e1.jpg_1024');
+  border: 1px solid brown;
+  padding: 1em;
+  color: yellow;
+  width: 30%;
+  font-size: 16px;
   height: 50px;
 }
 
-nav li {
-  line-height: 10px;
-  display: inline-block;
-  padding: 5px 40px 5px 0px ;
-  color: white;
+.brandywine {
+  background-position: center;
+  background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/7/72/BrandywineBridgeLOTRO.jpg/revision/latest?cb=20120905211158');
+  border: 1px solid black;
+  padding: 1em;
+  color: yellow;
+  width: 30%;
+  font-size: 12px;
+  height: 50px;
+  position: relative;
+  top: -9px;
 }
 
-.first {
+.theForest {
+  background-position: center;
+  background-image: url('https://qph.ec.quoracdn.net/main-qimg-2c4f366a20340742468f596eafb787fb');
+  border: 1px solid green;
   padding: 1em;
-  margin: 35px;
-  margin-bottom: 0px;
   color: yellow;
-  border: 1px solid saddlebrown;
-  background-color: green;
+  width: 30%;
+  font-size: 16px;
+  height: 50px;
+}
+
+#endShire {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.bree {
+  background-position: center center;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/61/1d/8d/611d8d06614d04527bee114f7146fcd3.jpg');
+  border: 1px solid green;
+  padding: 1em;
+  color: yellow;
+  width: 30%;
+  font-size: 16px;
+  height: 50px;
+}
+
+.amunSul {
+  background-position: center;
+  background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/a/ac/Imagess.jpg/revision/latest?cb=20130706004959');
+  border: 1px solid brown;
+  padding: 1em;
+  color: yellow;
+  width: 30%;
+  font-size: 16px;
+  height: 50px;
+}
+.barrowDowns {
+  background-position: center;
+  background-image: url('http://vignette2.wikia.nocookie.net/lotr/images/4/42/Barrow-downs%2C_Cardolan%27s_capital.JPG/revision/latest?cb=20090917154715');
+  border: 1px solid green;
+  padding: 1em;
+  color: yellow;
+  width: 30%;
+  font-size: 14.5px;
+  height: 50px;
+  position: relative;
+  top: -4px;
+}
+
+#safe {
+  margin: 0 auto;
+}
+
+.rivendell {
+  background-position: center;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeox8LC2nxifDQ_5s_i8dWgPXvFXsdxG_rPgz6As57620qf8a');
+  border: 1px solid darkblue;
+  padding: 1em;
+  color: yellow;
+  font-size: 16px;
+  height: 50px;
 }
 
 .rd2 {
@@ -53,56 +274,6 @@ nav li {
   border: 1px solid red;
   background-color: black;
 }
-#counter {
-  /*color: black;*/
-  text-align: center;
-  margin: 0 auto;
-  /*position: relative;*/
-  /*left: 737px;*/
-  /*bottom: 90px;*/
-  width: 250px;
-  border: 4px solid saddlebrown;
-  background-color: green;
-}
-
-#theShire {
-  /*border: 1px solid black;*/
-  /*text-align: center;*/
-  /*background-color: darkgreen;*/
-  /*position: relative;*/
-  /*right: 375px;*/
-  /*top: 1px;*/
-  /*font-size: 16px;*/
-  text-align: center;
-}
-
-#bagEnd {
-  /*text-align: center;*/
-  /*background-color: lightgreen;*/
-  /*position: relative;*/
-  /*top: 50px;*/
-  /*right: 375px;*/
-  text-align: center;
-}
-
-#bagEnd h3 {
-  padding: 1em;
-  border: 1px solid darkgreen;
-  width: 200px;
-  border-radius: 25%;
-  color: white;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0d/a3/fe/e5/bag-end.jpg');
-}
-#start {
-  background-color: green;
-  color: white;
-}
-#bagEnd button {
-  margin: auto;
-}
 
 #restart {
   background-color: darkgreen;
@@ -112,103 +283,6 @@ nav li {
 div h3 {
   display: inline-block;
   border-radius: 15%;
-}
-
-.hobbiton {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5leBj1rGIbcVj0FZ2aocieKrAflUFJgZBSEF0R9_z4Zq7WdH');
-  border: 1px solid brown;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 16px;
-}
-
-.buckland {
-  background-position: center center;
-  background-image: url('http://static.wixstatic.com/media/470378_1f30523464d87109999d18f9dd73f2e1.jpg_1024');
-  border: 1px solid brown;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 16px;
-}
-
-.farmer {
-  background-position: center;
-  background-image: url('http://users.bestweb.net/~jfgm/Mushrooms%20Website/Images/Tim%20Kirk%20Maggots%20Farm.jpg');
-  border: 1px solid brown;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 16px;
-}
-
-.brandywine {
-  background-position: center;
-  background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/7/72/BrandywineBridgeLOTRO.jpg/revision/latest?cb=20120905211158');
-  border: 1px solid black;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 12px;
-}
-
-.theForest {
-  background-position: center;
-  background-image: url('https://qph.ec.quoracdn.net/main-qimg-2c4f366a20340742468f596eafb787fb');
-  border: 1px solid green;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 15px;
-}
-
-.crickhollow {
-  background-position: center;
-  background-image: url('https://vignette2.wikia.nocookie.net/lotr/images/d/df/Crickhollow.jpg/revision/latest?cb=20120309214744');
-  border: 1px solid brown;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 16px;
-}
-
-.bree {
-  background-position: center center;
-  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/61/1d/8d/611d8d06614d04527bee114f7146fcd3.jpg');
-  border: 1px solid green;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 16px;
-}
-
-.amunSul {
-  background-position: center;
-  background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/a/ac/Imagess.jpg/revision/latest?cb=20130706004959');
-  border: 1px solid brown;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 16px;
-}
-.barrowDowns {
-  background-position: center;
-  background-image: url('http://vignette2.wikia.nocookie.net/lotr/images/4/42/Barrow-downs%2C_Cardolan%27s_capital.JPG/revision/latest?cb=20090917154715');
-  border: 1px solid green;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 14.5px;
-}
-.bree {
-  background-position: center;
-  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/61/1d/8d/611d8d06614d04527bee114f7146fcd3.jpg');
-  border: 1px solid green;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 16px;
 }
 
 .rivendell {
