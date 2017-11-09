@@ -1,10 +1,5 @@
 body {
-  /*background-image: url('http://wallpapercraft.net/wp-content/uploads/2016/06/Lord-Of-The-Rings-Picture.jpg');*/
   background-color: #5F9444;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 header {
@@ -36,40 +31,22 @@ header {
   height: 165px;
 }
 
-/*.door {
-  background: repeating-linear-gradient(
-    to right,
-    #07522B,
-    #07522B 10px,
-    #1A603F 10px,
-    #1A603F 20px
-  );
-  width: 12.5%;
-  border-radius: 100%;
-  height: 100%;
-  margin: 0 auto;
-  margin-top: 15px;
-  border: 5px solid #5C4033;
-}
-
-.bagEnd h3 {
-  position: relative;
-  top: 10.5%;
-}*/
 .bagEnd button {
   margin: auto;
   position: relative;
   top: 17.5px;
-  height: 40px;
+  height: 50px;
   border-radius: 50%;
   font-size: 10.5px;
-  left: -260px;
+  left: -265px;
+  width: 50px;
+  border: 2px solid #cd7f32;
 }
 
 #start {
   background-color: #B5A642;
   color: white;
-  border: 1px solid #A67D3D;
+  border: 3px solid #A67D3D;
 }
 
 #theShire {
