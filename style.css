@@ -9,12 +9,28 @@ header {
 #counter {
   text-align: center;
   margin: 0 auto;
-  width: 250px;
-  border: 4px solid #DE7C39;
-  background-color: #474B57;
+  width: 350px;
+  border: 4px solid #008148;
+  background-color: #C6C013;
   margin-top: 30px;
-  color: #DE7C39;
+  color: #034732;
   border-radius: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Kalam';
+  font-weight: bold;
+}
+
+.scoreboard {
+  font-size: 32px;
+}
+
+.lives {
+  font-size: 20px;
+}
+
+.round {
+  font-size: 20px;
 }
 
 #theShire {
@@ -89,7 +105,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
 }
 
 .farmer {
@@ -99,7 +115,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 .crickhollow {
@@ -109,7 +125,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   position: relative;
   border-radius: 10%;
 }
@@ -120,6 +136,13 @@ header {
   margin-top: 20px;
   font-size: 12px;
 }
+#midShire button {
+  position: relative;
+  top: 18.5px;
+  color: yellow;
+  background-color: green;
+  border: 1px solid brown;
+}
 
 .buckland {
   background-position: center center;
@@ -128,29 +151,29 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
 .brandywine {
   background-position: center;
   background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/7/72/BrandywineBridgeLOTRO.jpg/revision/latest?cb=20120905211158');
-  border: 1px solid brown;
+  border: 1px solid saddlebrown;
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
 .theForest {
   background-position: center;
   background-image: url('https://qph.ec.quoracdn.net/main-qimg-2c4f366a20340742468f596eafb787fb');
-  border: 1px solid brown;
+  border: 1px solid saddlebrown;
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -161,6 +184,14 @@ header {
   font-size: 12px;
 }
 
+#endShire button {
+  position: relative;
+  top: 18.5px;
+  color: yellow;
+  background-color: green;
+  border: 1px solid saddlebrown;
+}
+
 .bree {
   background-position: center center;
   background-image: url('https://s-media-cache-ak0.pinimg.com/originals/61/1d/8d/611d8d06614d04527bee114f7146fcd3.jpg');
@@ -168,7 +199,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -179,7 +210,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 .barrowDowns {
@@ -189,7 +220,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -200,13 +231,21 @@ header {
   font-size: 12px;
 }
 
+#safe button {
+  position: relative;
+  top: 18.5px;
+  color: yellow;
+  background-color: green;
+  border: 1px solid brown;
+}
+
 .rivendell {
   background-position: center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeox8LC2nxifDQ_5s_i8dWgPXvFXsdxG_rPgz6As57620qf8a');
   /*border: 1px solid brown;
   padding: 1em;
   color: yellow;*/
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
   margin: 0 auto;
   /*font-size: 12px;*/
@@ -248,6 +287,16 @@ header {
   margin-top: 20px;
 }
 
+#middleEarth button {
+  position: relative;
+  top: 18.5px;
+  color: yellow;
+  background-color: green;
+  border: 1px solid brown;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .hollin {
   background-position: center;
   background-image: url('http://corecanvas.s3.amazonaws.com/theonering-0188db0e/gallery/original/fellowship010823a.jpg');
@@ -255,7 +304,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -266,7 +315,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -277,7 +326,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -288,7 +337,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -299,7 +348,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -310,7 +359,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -320,7 +369,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -331,7 +380,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -342,7 +391,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -353,7 +402,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -364,7 +413,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -374,7 +423,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -385,7 +434,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -395,7 +444,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -417,7 +466,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 .deadMarshes {
@@ -427,7 +476,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 .ephelDuath {
@@ -437,7 +486,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 .shelob {
@@ -447,7 +496,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 .gorgorath {
@@ -457,7 +506,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 .mtDoom {
@@ -467,7 +516,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 .baradDur {
@@ -477,7 +526,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -488,7 +537,7 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
 
@@ -499,6 +548,6 @@ header {
   padding: 1em;
   color: yellow;
   width: 100%;
-  height: 100px;
+  height: 80px;
   border-radius: 10%;
 }
