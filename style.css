@@ -17,6 +17,20 @@ header {
   background-color: darkgreen;
 }
 
+.modal-title {
+  color: green;
+}
+
+.modal-footer button{
+  background-color: green;
+  color: white;
+}
+
+
+#myModal .close {
+  color: darkred;
+}
+
 #counter {
   text-align: center;
   margin: 0 auto;

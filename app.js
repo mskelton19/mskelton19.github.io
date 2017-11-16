@@ -70,6 +70,7 @@ $('#mordor2').hide();
 $('#mordor3').hide();
 $('#mordor4').hide();
 
+
 // Shire Round 1
 const shire1 = () => {
 
@@ -995,6 +996,7 @@ $('#start').on('click', (e) => {
   $('#theShire').show();
   $('#hobbits').show();
   $('.bagEnd').hide();
+  $('.modalButton').hide();
   $('#start').off('click');
   round+=1
   lives += 1
