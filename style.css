@@ -6,6 +6,17 @@ header {
   text-align: center;
 }
 
+.modalButton {
+  text-align: center;
+  position: relative;
+  top: 85px;
+  left: -20px;
+}
+
+.modalButton button {
+  background-color: darkgreen;
+}
+
 #counter {
   text-align: center;
   margin: 0 auto;
@@ -153,6 +164,7 @@ header {
   width: 100%;
   height: 80px;
   border-radius: 10%;
+  text-align: center;
 }
 
 .brandywine {
@@ -164,6 +176,10 @@ header {
   width: 100%;
   height: 80px;
   border-radius: 10%;
+}
+
+.brandywine button {
+  width: 150px;
 }
 
 .theForest {
@@ -225,7 +241,7 @@ header {
 }
 
 #safe {
-  width: 50%;
+  width: 500px;
   margin: 0 auto;
   margin-top: 20px;
   font-size: 12px;
@@ -233,22 +249,20 @@ header {
 
 #safe button {
   position: relative;
-  top: 18.5px;
+  top: 31.5px;
   color: yellow;
   background-color: green;
   border: 1px solid brown;
+  font-size: 10px;
 }
 
 .rivendell {
   background-position: center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeox8LC2nxifDQ_5s_i8dWgPXvFXsdxG_rPgz6As57620qf8a');
-  /*border: 1px solid brown;
-  padding: 1em;
-  color: yellow;*/
   height: 80px;
+  width: 200px;
   border-radius: 10%;
   margin: 0 auto;
-  /*font-size: 12px;*/
 }
 
 .rd2 {
@@ -257,30 +271,12 @@ header {
   margin-top: 20px;
   margin-bottom: 0px;
   color: yellow;
-  border: 1px solid saddlebrown;
-  background-color: green;
-}
-
-/*div h3 {
-  display: inline-block;
-  border-radius: 15%;
-}*/
-
-.rivendell {
-  background-position: center;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeox8LC2nxifDQ_5s_i8dWgPXvFXsdxG_rPgz6As57620qf8a');
-  border: 1px solid darkblue;
-  padding: 1em;
-  color: yellow;
-  width: 95px;
-  font-size: 16px;
+  text-align: center;
 }
 
 #middleEarth {
   width: 40%;
   margin: 0 auto;
-  margin-top: 20px;
-  font-size: 12px;
 }
 
 #middleEarth .col {
@@ -288,13 +284,12 @@ header {
 }
 
 #middleEarth button {
-  position: relative;
-  top: 18.5px;
+  /*position: relative;
+  top: 18.5px;*/
   color: yellow;
   background-color: green;
   border: 1px solid brown;
   margin: 0 auto;
-  text-align: center;
 }
 
 .hollin {

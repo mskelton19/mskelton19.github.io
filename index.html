@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
     <script
@@ -13,6 +17,32 @@
     <title></title>
   </head>
   <body>
+
+  <div class='modalButton'>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">How to Play</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">The road goes ever on and on...</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Gandalf has given you the One Ring to destroy. To accept the challenge, click on the hobbit hole door knob. You will begin in the Shire where you will decide what path to take to get to Middle Earth. At each stage you'll be given a horizontal line of villages to choose from. Be wary, as once you move forward you cannot move back. Know how many lives you have, if the Nazgul see you when you are out of lives, the ring will be lost and Shadow will cover Middle Earth. Keep it secret, keep it safe....</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
     <div id='container2'>
       <div id='counter'>
@@ -112,7 +142,7 @@
 
       <div id='middleEarth'>
         <h3 class='rd2'>Round 2 - Middle Earth</h3>
-        <div id='earlyME'>
+        <div class='earlyME'>
           <div class='container'>
             <div class='row'>
               <div class='col'>
@@ -277,6 +307,7 @@
           </div>
         </div>
       </div>
+
 
   </body>
 </html>
