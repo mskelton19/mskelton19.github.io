@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -12,104 +18,296 @@
   </head>
   <body>
 
-    <!-- <header>
+  <div class='modalButton'>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">How to Play</button>
+  </div>
 
-    </header> -->
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-    <!-- <nav id='nav'>
-      <ul>
-        <li>Home</li>
-        <li>Directions</li>
-        <li>Restart</li>
-      <ul>
-    </nav> -->
-
-    <div id="container">
-
-      <!--Bag End  -->
-      <div id='container2'>
-        <div id='counter'>
-          <h1 class='scoreboard'>Scoreboard: 0</h1>
-          <h2 class='lives'>Lives Left: 0</h1>
-          <h2 class='round'>Round: 0</h2>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">The road goes ever on and on...</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        <div id="bagEnd">
-          <h3>Bag End<br></br><button id='start'>Start</button></h3>
+        <div class="modal-body">
+          <p>Gandalf has given you the One Ring to destroy. To accept the challenge, click on the hobbit hole door knob. You will begin in the Shire where you will decide what path to take to get to Middle Earth. At each stage you'll be given a horizontal line of villages to choose from. Be wary, as once you move forward you cannot move back. Know how many lives you have, if the Nazgul see you when you are out of lives, the ring will be lost and Shadow will cover Middle Earth. Keep it secret, keep it safe....</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
+
+    </div>
+  </div>
+
+    <div id='container2'>
+      <div id='counter'>
+        <p class='scoreboard'>Score: 0</p>
+        <p class='lives'>Lives Left: 0</p>
+        <p class='round'>Round: 0</p>
+      </div>
+
+    <!--Bag End  -->
+    <div class="bagEnd">
+      <div class='door'>
+        <img src='http://www.tshirtvortex.net/wp-content/uploads/The-Green-Door.jpg'>
+        <button id='start'>Start</button>
+      </div>
+    </div>
 
     <!--The Shire -->
       <div id='theShire'>
         <div class='rd1'>
-        <h3 class='first'>Round 1 - The Shire</h3>
+        <h6>Round 1-The Shire</h6>
         </div>
-        <div id='hobbits'>
-          <h3 class='hobbiton'>Hobbiton</h3>
-          <h3 class='crickhollow'>Crickhollow</h3>
-          <h3 class='farmer'>Farmer</h3>
+        <div class='hobbits'>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='hobbiton'>
+                  <button>Hobbiton</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='crickhollow'>
+                  <button>Crickhollow</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='farmer'>
+                  <button>Farmer Maggot's</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="midShire">
-          <h3 class='buckland'>Buckland</h3>
-          <h3 class='brandywine'>Brandywine Bridge</h3>
-          <h3 class='theForest'>The Old Forest</h3>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='buckland'>
+                  <button>Buckland</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='brandywine'>
+                  <button>Brandywine Bridge</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='theForest'>
+                  <button>The Old Forest</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id='endShire'>
-          <h3 class='barrowDowns'>Barrow Downs</h3>
-          <h3 class='bree'>Bree</h3>
-          <h3 class='amunSul'>Amun Sol</h3>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='barrowDowns'>
+                <button>Barrow Downs</button>
+              </div>
+            </div>
+            <div class='col'>
+              <div class='bree'>
+                <button>Bree</button>
+              </div>
+            </div>
+            <div class='col'>
+              <div class='amunSul'>
+                <button>Amun Sol</button>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
         <div id="safe">
-          <h3 class='rivendell'>Rivendell</h3>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='rivendell'>
+                  <button>Rivendell</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div id='middleEarth'>
         <h3 class='rd2'>Round 2 - Middle Earth</h3>
-        <div id='earlyME'>
-          <h3 class='hollin'>Hollin</h3>
-          <h3 class='redhorn'>Redhorn Pass</h3>
-          <h3 class='gateOfMoria'>Gate of Moria</h3>
+        <div class='earlyME'>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='hollin'>
+                  <button>Hollin</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='redhorn'>
+                  <button>Redhorn Pass</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='gateOfMoria'>
+                  <button>Gate of Moria</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id='lorien'>
-          <h3 class='moria'>Mines of Moria</h3>
-          <h3 class='lorien'>Lorien</h3>
-          <h3 class='fangorn'>Fangorn</h3>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='moria'>
+                  <button>Mines of Moria</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='lorien'>
+                  <button>Lorien</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='fangorn'>
+                  <button>Fangorn Forest</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id='rohan'>
-          <h3 class ='isengard'>Isengard</h3>
-          <h3 class= "helmsDeep">Helm's Deep</h3>
-          <h3 class= 'edoras'>Edoras</h3>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='isengard'>
+                  <button>Isengard</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='helmsDeep'>
+                  <button>Helms Deep</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='edoras'>
+                  <button>Edoras</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id='aragorn'>
-          <h3 class='paths'>Path of the Dead</h3>
-          <h3 class='ithilien'>Ithilien</h3>
-          <h3 class='argonath'>Argonath</h3>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='paths'>
+                  <button>Paths of the Dead</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='ithilien'>
+                  <button>Ithilien</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='argonath'>
+                  <button>Argonath</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id='gondor'>
-          <h3 class='tirith'>Minas Tirith</h3>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='tirith'>
+                  <button>Tirith</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div id="mordor">
         <h3 class='rd3'>Round 3 - Mordor</h3>
         <div id="mordor1">
-          <h3 class='osgiliath'>Osgiliath</h3>
-          <h3 class='deadMarshes'>Dead Marshes</h3>
-          <h3 class="ephelDuath">Ephel Dueth</h3>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='osgiliath'>
+                  <button>Osgiliath</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='deadMarshes'>
+                  <button>Dead Marshes</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='ephelDuath'>
+                  <button>Ephel Dueth</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id='mordor2'>
-          <h3 class="morgul">Minas Morgul</h3>
-          <h3 class='shelob'>Shelob's Lair</h3>
-          <h3 class="gate">Black Gate</h3>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='morgul'>
+                  <button>Minas Morgul</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='shelob'>
+                  <button>Shelob's Lair</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='gate'>
+                  <button>Black Gate</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id='mordor3'>
-          <h3 class='gorgorath'>Gorgorath</h3>
-          <h3 class="baradDur">Barad Dur</h3>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <div class='gorgorath'>
+                  <button>Gorgorath</button>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='baradDur'>
+                  <button>Barad Dur</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id='mordor4'>
-          <h3 class='mtDoom'>Mt. Doom</h3>
+          <div class='col'>
+            <div class='mtDoom'>
+              <button>Mt. Doom</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    </div>
 
   </body>
 </html>
