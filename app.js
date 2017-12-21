@@ -285,6 +285,7 @@ const shire4 = () => {
     $('#theShire').hide();
     $('#middleEarth').show();
     advance();
+    background();
 }
 
 const midEarth1 = () => {
@@ -427,47 +428,65 @@ const midEarth3 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
 
   if (randNum1 === 1 && isengard > 0 && lives > 0){
-    $('.isengard').css('background', 'red');
+    $('.isengard').css('background-position', 'center center');
+    $('.isengard').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+    $('.isengard').css('color', 'white');
     me3++
     aragorn();
     loseLives();
     livesLeft();
 } else if(randNum1 === 1 && isengard > 0 && lives <= 0){
-    $('.isengard').css('background', 'red');
+  $('.isengard').css('background-position', 'center center');
+  $('.isengard').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.isengard').css('color', 'white');
     me3++
     lose();
 } else if (randNum1 === 1){
-    $('.isengard').css('background', 'red');
+  $('.isengard').css('background-position', 'center center');
+  $('.isengard').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.isengard').css('color', 'white');
     me3++
     aragorn();
     advance2();
 } else if (randNum1 === 2 && helmsDeep > 0 && lives > 0){
-    $('.helmsDeep').css('background', 'red');
+  $('.helmsDeep').css('background-position', 'center center');
+  $('.helmsDeep').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.helmsDeep').css('color', 'white');
      me3++
     aragorn();
     loseLives();
     livesLeft();
 } else if(randNum1 === 2 && helmsDeep > 0 && lives <= 0){
-    $('.helmsDeep').css('background', 'red');
+  $('.helmsDeep').css('background-position', 'center center');
+  $('.helmsDeep').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.helmsDeep').css('color', 'white');
     me3++
     lose();
 } else if (randNum1 === 2){
-    $('.helmsDeep').css('background', 'red');
+  $('.helmsDeep').css('background-position', 'center center');
+  $('.helmsDeep').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.helmsDeep').css('color', 'white');
     me3++
     aragorn();
     advance2();
 } else if (randNum1 === 3 && edoras > 0 && lives > 0){
-    $('.edoras').css('background', 'red');
+  $('.edoras').css('background-position', 'center center');
+  $('.edoras').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.edoras').css('color', 'white');
     me3++
     aragorn();
     loseLives();
     livesLeft();
 } else if(randNum1 === 3 && edoras > 0 && lives <= 0){
-    $('.edoras').css('background', 'red');
+  $('.edoras').css('background-position', 'center center');
+  $('.edoras').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.edoras').css('color', 'white');
     me3++
     lose();
 } else if (randNum1 === 3){
-    $('.edoras').css('background', 'red');
+  $('.edoras').css('background-position', 'center center');
+  $('.edoras').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.edoras').css('color', 'white');
     me3++
     aragorn();
     advance2();
@@ -478,47 +497,65 @@ const midEarth4 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
 
   if (randNum1 === 1 && paths > 0 && lives > 0){
-    $('.paths').css('background', 'red');
+    $('.paths').css('background-position', 'center center');
+    $('.paths').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+    $('.paths').css('color', 'white');
     me4++
     gondor2();
     loseLives();
     livesLeft();
 } else if(randNum1 === 1 && paths > 0 && lives <= 0){
-    $('.paths').css('background', 'red');
+  $('.paths').css('background-position', 'center center');
+  $('.paths').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.paths').css('color', 'white');
     me4++
     lose();
 } else if (randNum1 === 1){
-  $('.paths').css('background', 'red');
+  $('.paths').css('background-position', 'center center');
+  $('.paths').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.paths').css('color', 'white');
   me4++
   gondor2();
   advance2();
 } else if (randNum1 === 2 && ithilien > 0 && lives > 0){
-  $('.ithilien').css('background', 'red');
+  $('.ithilien').css('background-position', 'center center');
+  $('.ithilien').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.ithilien').css('color', 'white');
   me4++
   gondor2();
   loseLives();
   livesLeft();
 } else if(randNum1 === 2 && ithilien > 0 && lives <= 0){
-  $('.ithilien').css('background', 'red');
+  $('.ithilien').css('background-position', 'center center');
+  $('.ithilien').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.ithilien').css('color', 'white');
   me4++
   lose();
 } else if (randNum1 === 2){
-  $('.ithilien').css('background', 'red');
+  $('.ithilien').css('background-position', 'center center');
+  $('.ithilien').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.ithilien').css('color', 'white');
   me4++
   gondor2();
   advance2();
 } if (randNum1 === 3 && argonath > 0 && lives > 0){
-  $('.argonath').css('background', 'red');
+  $('.argonath').css('background-position', 'center center');
+  $('.argonath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.argonath').css('color', 'white');
   me4++
   endShire();
   loseLives();
   livesLeft();
 } else if(randNum1 === 3 && argonath > 0 && lives <= 0){
-  $('.argonath').css('background', 'red');
+  $('.argonath').css('background-position', 'center center');
+  $('.argonath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.argonath').css('color', 'white');
   me4++
   lose();
 } else if (randNum1 === 3){
-  $('.argonath').css('background', 'red');
+  $('.argonath').css('background-position', 'center center');
+  $('.argonath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.argonath').css('color', 'white');
   me4++
   gondor2();
   advance2();
@@ -532,53 +569,72 @@ const midEarth5 = () => {
   $('#mordor').show();
   advance2();
   m1();
+  background2();
 }
 
 const mordor1 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
 
   if (randNum1 === 1 && osgiliath > 0 && lives > 0){
-    $('.osgiliath').css('background', 'red');
+    $('.osgiliath').css('background-position', 'center center');
+    $('.osgiliath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+    $('.osgiliath').css('color', 'white');
     mr1++
     m2();
     loseLives();
     livesLeft();
 } else if(randNum1 === 1 && osgiliath > 0 && lives <= 0){
-    $('.osgiliath').css('background', 'red');
+  $('.osgiliath').css('background-position', 'center center');
+  $('.osgiliath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.osgiliath').css('color', 'white');
     mr1++
     lose();
 } else if (randNum1 === 1){
-    $('.osgiliath').css('background', 'red');
+  $('.osgiliath').css('background-position', 'center center');
+  $('.osgiliath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.osgiliath').css('color', 'white');
     mr1++
     m2();
     advance3();
 } else if (randNum1 === 2 && deadMarshes > 0 && lives > 0){
-  $('.deadMarshes').css('background', 'red');
+  $('.deadMarshes').css('background-position', 'center center');
+  $('.deadMarshes').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.deadMarshes').css('color', 'white');
   mr1++
   m2();
   loseLives();
   livesLeft();
 } else if(randNum1 === 2 && deadMarshes > 0 && lives <= 0){
-  $('.deadMarshes').css('background', 'red');
+  $('.deadMarshes').css('background-position', 'center center');
+  $('.deadMarshes').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.deadMarshes').css('color', 'white');
   mr1++
   lose();
 } else if (randNum1 === 2){
-  $('.deadMarshes').css('background', 'red');
+  $('.deadMarshes').css('background-position', 'center center');
+  $('.deadMarshes').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.deadMarshes').css('color', 'white');
   mr1++
   m2();
   advance3();
 } else if (randNum1 === 1 && ephelDuath > 0 && lives > 0){
-  $('.ephelDuath').css('background', 'red');
+  $('.ephelDuath').css('background-position', 'center center');
+  $('.ephelDuath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.ephelDuath').css('color', 'white');
   mr1++
   m2();
   loseLives();
   livesLeft();
 } else if(randNum1 === 1 && ephelDuath > 0 && lives <= 0){
-  $('.ephelDuath').css('background', 'red');
+  $('.ephelDuath').css('background-position', 'center center');
+  $('.ephelDuath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.ephelDuath').css('color', 'white');
   mr1++
   lose();
 } else if (randNum1 === 3){
-  $('.ephelDuath').css('background', 'red');
+  $('.ephelDuath').css('background-position', 'center center');
+  $('.ephelDuath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.ephelDuath').css('color', 'white');
   mr1++
   m2();
   advance3();
@@ -588,47 +644,65 @@ const mordor1 = () => {
 const mordor2 = () => {
   const randNum1 = Math.floor(Math.random() * 3) + 1;
   if (randNum1 === 1 && morgul > 0 && lives > 0){
-    $('.morgul').css('background', 'red');
+    $('.morgul').css('background-position', 'center center');
+    $('.morgul').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+    $('.morgul').css('color', 'white');
     mr2++
     m3();
     loseLives();
     livesLeft();
 } else if(randNum1 === 1 && morgul > 0 && lives <= 0){
-    $('.morgul').css('background', 'red');
+  $('.morgul').css('background-position', 'center center');
+  $('.morgul').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.morgul').css('color', 'white');
     mr2++
     lose();
 } else if (randNum1 === 1){
-    $('.morgul').css('background', 'red');
+  $('.morgul').css('background-position', 'center center');
+  $('.morgul').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.morgulmorgul').css('color', 'white');
     mr2++
     m3();
     advance3();
 } if (randNum1 === 2 && shelob > 0 && lives > 0){
-  $('.shelob').css('background', 'red');
+  $('.shelob').css('background-position', 'center center');
+  $('.shelob').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.shelob').css('color', 'white');
   mr2++
   m3();
   loseLives();
   livesLeft();
 } else if(randNum1 === 2 && shelob > 0 && lives <= 0){
-  $('.shelob').css('background', 'red');
+  $('.shelob').css('background-position', 'center center');
+  $('.shelob').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.shelob').css('color', 'white');
   mr2++
   lose();
 } else if (randNum1 === 2){
-  $('.shelob').css('background', 'red');
+  $('.shelob').css('background-position', 'center center');
+  $('.shelob').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.shelob').css('color', 'white');
   mr2++
   m3();
   advance3();
 } if (randNum1 === 3 && gate > 0 && lives > 0){
-  $('.gate').css('background', 'red');
+  $('.gate').css('background-position', 'center center');
+  $('.gate').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.gate').css('color', 'white');
   mr2++
   m3();
   loseLives();
   livesLeft();
 } else if(randNum1 === 3 && gate > 0 && lives <= 0){
-  $('.gate').css('background', 'red');
+  $('.gate').css('background-position', 'center center');
+  $('.gate').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.gate').css('color', 'white');
   mr2++
   lose();
 } else if (randNum1 === 3){
-  $('.gate').css('background', 'red');
+  $('.gate').css('background-position', 'center center');
+  $('.gate').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.gate').css('color', 'white');
   mr2++
   m3();
   advance3();
@@ -638,32 +712,44 @@ const mordor2 = () => {
 const mordor3 = () => {
   const randNum1 = Math.floor(Math.random() * 2) + 1;
   if (randNum1 === 1 && gorgorath > 0 && lives > 0){
-    $('.gorgorath').css('background', 'red');
+    $('.gorgorath').css('background-position', 'center center');
+    $('.gorgorath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+    $('.gorgorath').css('color', 'white');
     mr3++
     m4();
     loseLives();
     livesLeft();
 } else if(randNum1 === 1 && gorgorath > 0 && lives <= 0){
-  $('.gorgorath').css('background', 'red');
+  $('.gorgorath').css('background-position', 'center center');
+  $('.gorgorath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.gorgorathgorgorath').css('color', 'white');
   mr3++
   lose();
 } else if (randNum1 === 1){
-  $('.gorgorath').css('background', 'red');
+  $('.gorgorathgorgorath').css('background-position', 'center center');
+  $('.gorgorath').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.gorgorath').css('color', 'white');
   mr3++
   m4();
   advance3();
 } if (randNum1 === 2 && baradDur > 0 && lives > 0){
-  $('.baradDur').css('background', 'red');
+  $('.baradDur').css('background-position', 'center center');
+  $('.baradDur').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.baradDur').css('color', 'white');
   mr3++
   m4();
   loseLives();
   livesLeft();
 } else if(randNum1 === 2 && baradDur > 0 && lives <= 0){
-  $('.baradDur').css('background', 'red');
+  $('.baradDur').css('background-position', 'center center');
+  $('.baradDur').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.baradDur').css('color', 'white');
   mr3++
   lose();
 } else if (randNum1 === 2){
-  $('.baradDur').css('background', 'red');
+  $('.baradDur').css('background-position', 'center center');
+  $('.baradDur').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+  $('.baradDur').css('color', 'white');
   mr3++
   m4();
   advance3();
@@ -673,7 +759,9 @@ const mordor3 = () => {
 const mordor4 = () => {
   const randNum1 = Math.floor(Math.random() * 2) + 1;
   if (randNum1 === 1) {
-  $('.doom').css('background', 'red');
+    $('.mtDoom').css('background-position', 'center center');
+    $('.mtDoom').css('background-image', 'url(https://ichef.bbci.co.uk/news/660/media/images/79630000/jpg/_79630637_alamydt7hcy.jpg)');
+    $('.mtDoom').css('color', 'white');
   lose();
 } else if (randNum1 === 2){
   win();
@@ -697,6 +785,7 @@ const advance = () => {
   $('.round').text('Round: ' + round);
   alert("You have avoided Sauron's gaze. The journey continues. Keep it secret, keep it safe")
 }
+
 const advance2 = () => {
   pts+=3
   $('.scoreboard').text('Scoreboard: ' + pts);
@@ -752,7 +841,16 @@ const m4 = () => {
   $('#mordor4').show();
 }
 const background = () => {
-  $('.this').css('background', 'red');
+  $('.body').css('background', '#D1C6AD');
+  $('#counter').css('border', '4px solid #506C64');
+  $('#counter').css('background-color', '#BBADA0');
+}
+
+const background2 = () => {
+  $('.body').css('background', '#494E54');
+  $('#counter').css('border', ('4px solid #FF4E04'));
+  $('#counter').css('color', ('#FF4E04'));
+  $('#counter').css('background-color', ('#303036'));
 }
 $('.hobbiton').one('click', (e) => {
   if(s1 > 0) {

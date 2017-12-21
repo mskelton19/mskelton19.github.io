@@ -300,7 +300,7 @@ header {
 #middleEarth button {
   position: relative;
   color: white;
-  background-color: #788C8C;
+  background-color: #506C64;
   border: 1px solid darkgray;
   font-size: 12px;
   top: 11.5px;
@@ -313,7 +313,7 @@ header {
 .hollin {
   background-position: center;
   background-image: url('http://corecanvas.s3.amazonaws.com/theonering-0188db0e/gallery/original/fellowship010823a.jpg');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -328,7 +328,7 @@ header {
 .redhorn {
   background-position: center;
   background-image: url('http://c252289.r89.cf3.rackcdn.com/18526.jpg');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -343,7 +343,7 @@ header {
 .gateOfMoria {
   background-position: center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8D_vSpGYrZvXfMXJtLzySArg_TyngYliPOjsxj_LNjoOt9pHnZA');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -358,7 +358,7 @@ header {
 .moria {
   background-position: center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8D_vSpGYrZvXfMXJtLzySArg_TyngYliPOjsxj_LNjoOt9pHnZA');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -377,7 +377,7 @@ header {
 .lorien {
   background-position: center center;
   background-image: url('https://vignette1.wikia.nocookie.net/lotr/images/7/7c/Carasgaladhon.jpg/revision/latest?cb=20070222040838');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -396,7 +396,7 @@ header {
 .fangorn {
   background-position: center;
   background-image: url('http://www.thelandofshadow.com/wp-content/uploads/2016/07/FangornLarge1.jpg');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -413,7 +413,7 @@ header {
 
 .isengard {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmDvbI9jAIBoOYxmNUy8ZIY1yydgzoBd-xHxvIT3OyacrLfGZ4');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -423,7 +423,7 @@ header {
 .helmsDeep {
   background-position: center;;
   background-image: url('https://www.thefandomentals.com/wp-content/uploads/2017/04/helms09.jpg');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -433,7 +433,7 @@ header {
 .edoras {
   background-position: center;
   background-image: url('https://vignette1.wikia.nocookie.net/lotr/images/2/2e/Edoras.jpg/revision/latest?cb=20100325163858');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -443,7 +443,7 @@ header {
 .paths {
   background-position: center;;
   background-image: url('http://www.thelandofshadow.com/wp-content/uploads/2016/07/PathsDead1.jpg');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -454,7 +454,7 @@ header {
 .ithilien {
   background-position: center;;
   background-image: url('http://orig12.deviantart.net/36c7/f/2013/004/c/2/twelve_mile_delta_aka_ithilien_by_irissiel-d5qh04v.jpg');
-  border: 1px solid darkgray;
+  border: 1px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -467,7 +467,7 @@ header {
 
 .argonath {
   background-image: url('https://i.stack.imgur.com/267fr.jpg');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
@@ -481,7 +481,7 @@ header {
 .tirith {
   background-position: center;;
   background-image: url('https://upload.wikimedia.org/wikipedia/en/4/4f/Roturn_King-Minas_Tirith.jpg');
-  border: 2.5px solid darkgray;
+  border: 2.5px solid #506C64;
   padding: 1em;
   width: 100%;
   height: 80px;
