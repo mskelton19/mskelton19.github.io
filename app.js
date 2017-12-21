@@ -70,6 +70,7 @@ $('#mordor2').hide();
 $('#mordor3').hide();
 $('#mordor4').hide();
 $('.nazgul').hide();
+$('.win').hide();
 
 // Shire Round 1
 const shire1 = () => {
@@ -773,6 +774,7 @@ const lose = () => {
   alert('You have been caught by the Nazgul. Sauron has regained the one ring');
   $('.game').hide();
   $('.nazgul').show();
+  $('body').css('background-color', 'black');
 }
 const livesLeft = () => {
   $('.lives').text('Lives left: ' + lives)
@@ -817,7 +819,10 @@ const lorien2 = () => {
 const win = () => {
   pts+=10;
   $('.scoreboard').text('Scoreboard: ' + pts);
-  alert('The ring has been destroyed!')
+  alert('The ring has been destroyed!');
+  $('.win').show();
+  $('.game').hide();
+  $('.body').css('background-color', 'black');
 }
 const rohan2 = () => {
   $('#rohan').show();
