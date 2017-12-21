@@ -9,12 +9,14 @@ header {
 .modalButton {
   text-align: center;
   position: relative;
-  top: 35px;
+  top: 350px;
   left: -20px;
 }
 
 .modalButton button {
   background-color: darkgreen;
+  height: 40px;
+  font-size: 15px;
 }
 
 .modal-title {
@@ -34,16 +36,17 @@ header {
 #counter {
   text-align: center;
   margin: 0 auto;
-  width: 350px;
+  width: 250px;
   border: 4px solid #008148;
   background-color: #C6C013;
-  margin-top: 30px;
+  margin-top: 10px;
   color: #034732;
   border-radius: 10%;
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: 'Kalam';
   font-weight: bold;
+  height: 200px;
 }
 
 .scoreboard {
@@ -103,20 +106,22 @@ header {
 }
 .rd1 h6 {
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: -15px;
 }
 
 .hobbits {
   width: 40%;
   margin: 0 auto;
+  margin-bottom: -10px;
 }
 
 .hobbits button {
   position: relative;
-  top: 18.5px;
-  color: yellow;
+  top: 14.5px;
+  color: white;
   background-color: green;
-  border: 1px solid brown;
+  border: 2px solid lightgreen;
 }
 
 .hobbits .container {
@@ -125,10 +130,9 @@ header {
 
 .hobbiton {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5leBj1rGIbcVj0FZ2aocieKrAflUFJgZBSEF0R9_z4Zq7WdH');
-  border: 1px solid brown;
+  border: 2.5px solid lightgreen;
   border-radius: 10%;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
 }
@@ -136,9 +140,8 @@ header {
 .farmer {
   background-position: center;
   background-image: url('https://i.pinimg.com/236x/00/14/25/001425a870f2f8f3b2971603d8a312f9--lembang-farm-house.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid lightgreen;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -146,35 +149,32 @@ header {
 .crickhollow {
   background-image: url('https://c1.staticflickr.com/7/6006/5934736693_fbb2b4de79_b.jpg');
   background-position: center;
-  border: 1px solid brown;
+  border: 2.5px solid lightgreen;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   position: relative;
   border-radius: 10%;
 }
-
 #midShire {
   width: 40%;
   margin: 0 auto;
   margin-top: 20px;
   font-size: 12px;
+  margin-bottom: -10px;
 }
 #midShire button {
   position: relative;
   top: 18.5px;
-  color: yellow;
+  color: white;
   background-color: green;
-  border: 1px solid brown;
+  border: 1px solid lightgreen;
 }
-
 .buckland {
   background-position: center center;
   background-image: url('http://static.wixstatic.com/media/470378_1f30523464d87109999d18f9dd73f2e1.jpg_1024');
-  border: 1px solid brown;
+  border: 2.5px solid lightgreen;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -184,9 +184,8 @@ header {
 .brandywine {
   background-position: center;
   background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/7/72/BrandywineBridgeLOTRO.jpg/revision/latest?cb=20120905211158');
-  border: 1px solid saddlebrown;
+  border: 2.5px solid lightgreen;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -199,9 +198,8 @@ header {
 .theForest {
   background-position: center;
   background-image: url('https://qph.ec.quoracdn.net/main-qimg-2c4f366a20340742468f596eafb787fb');
-  border: 1px solid saddlebrown;
+  border: 2.5px solid lightgreen;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -212,22 +210,22 @@ header {
   margin: 0 auto;
   margin-top: 20px;
   font-size: 12px;
+  margin-bottom: -10px;
 }
 
 #endShire button {
   position: relative;
   top: 18.5px;
-  color: yellow;
+  color: white;
   background-color: green;
-  border: 1px solid saddlebrown;
+  border: 1px solid lightgreen;
 }
 
 .bree {
   background-position: center center;
   background-image: url('https://s-media-cache-ak0.pinimg.com/originals/61/1d/8d/611d8d06614d04527bee114f7146fcd3.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid lightgreen;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -236,9 +234,8 @@ header {
 .amunSul {
   background-position: center;
   background-image: url('https://vignette4.wikia.nocookie.net/lotr/images/a/ac/Imagess.jpg/revision/latest?cb=20130706004959');
-  border: 1px solid brown;
+  border: 2.5px solid lightgreen;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -246,9 +243,8 @@ header {
 .barrowDowns {
   background-position: center;
   background-image: url('http://vignette2.wikia.nocookie.net/lotr/images/4/42/Barrow-downs%2C_Cardolan%27s_capital.JPG/revision/latest?cb=20090917154715');
-  border: 1px solid brown;
+  border: 2.5px solid lightgreen;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -264,9 +260,9 @@ header {
 #safe button {
   position: relative;
   top: 31.5px;
-  color: yellow;
+  color: white;
   background-color: green;
-  border: 1px solid brown;
+  border: 1px solid lightgreen;
   font-size: 10px;
 }
 
@@ -277,15 +273,19 @@ header {
   width: 200px;
   border-radius: 10%;
   margin: 0 auto;
+  border: 2.5px solid lightgreen;
 }
 
 .rd2 {
-  padding: 1em;
-  margin: 35px;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  color: yellow;
+  width: 50%;
+  margin: 0 auto;
+  background-position: bottom;
+  color: white;
+  margin-top: 10px;
   text-align: center;
+  position: relative;
+  left: 3.5px;
+  margin-bottom: -15px;
 }
 
 #middleEarth {
@@ -298,85 +298,123 @@ header {
 }
 
 #middleEarth button {
-  /*position: relative;
-  top: 18.5px;*/
-  color: yellow;
-  background-color: green;
-  border: 1px solid brown;
-  margin: 0 auto;
+  position: relative;
+  color: white;
+  background-color: #788C8C;
+  border: 1px solid darkgray;
+  font-size: 12px;
+  top: 11.5px;
+}
+
+.earlyME {
+  margin-bottom: -10px;
 }
 
 .hollin {
   background-position: center;
   background-image: url('http://corecanvas.s3.amazonaws.com/theonering-0188db0e/gallery/original/fellowship010823a.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+  margin: 0 auto;
+}
+
+.hollin button {
+  left: 30%;
 }
 
 .redhorn {
   background-position: center;
   background-image: url('http://c252289.r89.cf3.rackcdn.com/18526.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+  margin: 0 auto;
+}
+
+.redhorn button {
+  left: 10%;
 }
 
 .gateOfMoria {
   background-position: center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8D_vSpGYrZvXfMXJtLzySArg_TyngYliPOjsxj_LNjoOt9pHnZA');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+  margin: 0 auto;
+}
+
+.gateOfMoria button {
+  left: 10%;
 }
 
 .moria {
   background-position: center;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8D_vSpGYrZvXfMXJtLzySArg_TyngYliPOjsxj_LNjoOt9pHnZA');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+  margin: 0 auto;
+}
+
+.moria button {
+  left: 5%;
+}
+
+#lorien {
+  margin-bottom: -10px;
 }
 
 .lorien {
   background-position: center center;
   background-image: url('https://vignette1.wikia.nocookie.net/lotr/images/7/7c/Carasgaladhon.jpg/revision/latest?cb=20070222040838');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+  margin: 0 auto;
+}
+
+.lorien button {
+  left: 30%;
+}
+
+#rohan {
+  margin-bottom: -10px;
 }
 
 .fangorn {
   background-position: center;
   background-image: url('http://www.thelandofshadow.com/wp-content/uploads/2016/07/FangornLarge1.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
 }
 
+#aragorn {
+  margin-bottom: -10px;
+}
+
+.fangorn button {
+  left: 5%;
+}
+
 .isengard {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmDvbI9jAIBoOYxmNUy8ZIY1yydgzoBd-xHxvIT3OyacrLfGZ4');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -385,9 +423,8 @@ header {
 .helmsDeep {
   background-position: center;;
   background-image: url('https://www.thefandomentals.com/wp-content/uploads/2017/04/helms09.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -396,9 +433,8 @@ header {
 .edoras {
   background-position: center;
   background-image: url('https://vignette1.wikia.nocookie.net/lotr/images/2/2e/Edoras.jpg/revision/latest?cb=20100325163858');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -407,51 +443,59 @@ header {
 .paths {
   background-position: center;;
   background-image: url('http://www.thelandofshadow.com/wp-content/uploads/2016/07/PathsDead1.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+  font-size: 10px;
 }
 
 .ithilien {
   background-position: center;;
   background-image: url('http://orig12.deviantart.net/36c7/f/2013/004/c/2/twelve_mile_delta_aka_ithilien_by_irissiel-d5qh04v.jpg');
-  border: 1px solid brown;
+  border: 1px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
 }
 
+.ithilien button {
+  left: 20%;
+}
+
 .argonath {
   background-image: url('https://i.stack.imgur.com/267fr.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+}
+
+.argonath button {
+  left: 20%;
 }
 
 .tirith {
   background-position: center;;
   background-image: url('https://upload.wikimedia.org/wikipedia/en/4/4f/Roturn_King-Minas_Tirith.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid darkgray;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
 }
 
+.tirith button {
+  left: 45%;
+}
+
 .gondor {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxuJQu5-F-DHBru6KXEm5blx2riECiizAlQvhMcw6322mxzXZO');
-  border: 1px solid brown;
+  border: 2.5px solid #FF6600;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
@@ -464,99 +508,159 @@ header {
   font-size: 12px;
 }
 
+#mordor h6 {
+  color: white;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+#mordor button {
+  position: relative;
+  top: 17.5px;
+  color: white;
+  background-color: black;
+  border: 1px solid red;
+  font-size: 12px;
+}
+
 #mordor .col {
   margin-top: 20px;
+}
+
+#mordor1 {
+  margin-bottom: -10px;
 }
 
 .osgiliath {
   background-position: center;
   background-image: url('http://www.historiarex.com/uploads/files/1413433857.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid red;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+}
+
+.osgiliath button {
+  left: 25%;
 }
 .deadMarshes {
   background-position: center;
   background-image: url('http://features.cgsociety.org/newgallerycrits/g06/369006/369006_1352980844_large.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid red;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
 }
+
+.deadMarshes button {
+  left: 10%;
+}
+
 .ephelDuath {
   background-position: center;
   background-image: url('http://features.cgsociety.org/newgallerycrits/g06/369006/369006_1352980844_large.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid red;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+}
+.ephelDuath button {
+  left: 15%;
+}
+
+#mordor2 {
+  margin-bottom: -10px;
 }
 .shelob {
   background-position: center;
   background-image: url('http://www.frodolivesin.us/Shelob/9d500a80.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid red;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
 }
+
+.shelob button {
+  left: 15%;
+}
+
 .gorgorath {
   background-position: center;
   background-image: url('http://elvenesse.net/blog/wp-content/uploads/2012/03/GorgorothPlain.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid red;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
 }
+
+#mordor3 {
+  margin-bottom: -10px;
+}
+
+.gorgorath button {
+  left: 32.5%;
+}
+
 .mtDoom {
   background-position: center;
   background-image: url('http://www.dylancolestudio.com/Matte/ROTK/images/573_22_MP_4k_v01.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid red;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+}
+
+.mtDoom button {
+  left: 40%;
+}
+
+#mordor4 {
+  margin-bottom: -10px;
 }
 .baradDur {
   background-position: center;
   background-image: url('http://www.dylancolestudio.com/Matte/ROTK/images/573_GEN_4k_v02.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid red;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+}
+
+.baradDur button {
+  left: 30%;
 }
 
 .morgul {
   background-position: center;
   background-image: url('https://i.ytimg.com/vi/MPVo2KDOosk/hqdefault.jpg');
-  border: 1px solid brown;
+  border: 2.5px solid red;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
 }
 
+.morgul button {
+  left: 15%;
+}
+
 .gate {
   background-position: center center;
   background-image: url('https://vignette3.wikia.nocookie.net/lotr/images/5/57/Black_gate.png/revision/latest?cb=20131113193151');
-  border: 1px solid brown;
+  border: 2.5px solid red;
   padding: 1em;
-  color: yellow;
   width: 100%;
   height: 80px;
   border-radius: 10%;
+}
+
+.gate button {
+  left: 15%;
 }
