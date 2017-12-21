@@ -69,7 +69,7 @@ $('#mordor1').hide();
 $('#mordor2').hide();
 $('#mordor3').hide();
 $('#mordor4').hide();
-
+$('.nazgul').hide();
 
 // Shire Round 1
 const shire1 = () => {
@@ -771,6 +771,8 @@ const mordor4 = () => {
 //
 const lose = () => {
   alert('You have been caught by the Nazgul. Sauron has regained the one ring');
+  $('.game').hide();
+  $('.nazgul').show();
 }
 const livesLeft = () => {
   $('.lives').text('Lives left: ' + lives)

@@ -6,6 +6,15 @@ header {
   text-align: center;
 }
 
+.nazgul img {
+  position: relative;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .modalButton {
   text-align: center;
   position: relative;
