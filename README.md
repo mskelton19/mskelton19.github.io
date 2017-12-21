@@ -1,24 +1,13 @@
 # mskelton19.github.io
 
-My original plan was to create a Lord of the Rings based chance game where the player jumps from div to div,
-trying to avoid being caught by a randomized selector. Each round has a different number of options and different point 
-assignments. If you are able to get to the last stage of each round, the next round automatically starts.
+This was my first project as a programmer, three weeks into my General Assembly Web Development Immersive. My original plan was to create a Lord of the Rings based chance game where the player can select his own route through different levels. To do this, I used Javascript to create game logic that randomized where 'The Eye of Sauron' looked during each phase. If you chose the point where the eye was looking, you would lose a life.
 
-You're given one life at the beginning of the game. You can go down to zero (a la Mario) but anything less than that and the 
-game is over. Each time you complete a round, you are given an additional life.
+To make sure the player understood where they stand, I created a scoreboard that counted their lives, the round they were on, and their total points. Points are awarded as follows, 1 point for avoiding the eye at each point in the first round, 3 points for avoiding the eye at each point in the second round, 5 points for avoiding the eye at each point in the third round, and 10 for successfully winning the game.
 
-Points are distributed as follows: 1 for the first round, 3 for the second round, and 5 for the third round. If you're able to 
-make it all the way through, you're awarded an additional ten points.
+As it wasn't readily obvious how to begin, I created a start screen with a start button and a modal to describe the game to the user. As the game and my coding evolved, I started implementing additional DOM manipulation to update what the user was seeing on a level to level basis. Instead of just receiving an alert saying the user lost the game, I added gifs showing the nazgul catching Frodo. I also added one for when you won the game.
 
+As this was my first attempt at a game via Javascript, there's a lot that could have been done more efficiently. The game logic could have used some additional loops to avoid repeating code. Additionally, the classes in CSS are in need of an update as they don't efficiently disseminate code throughout the page.
 
-Most of what I did was done with jquery. Once I finished the first round and spoke with my instructor, I decided to push the game
-further than I originally intended. This became an issue due to the amount of code. There was certainly a better way to write 
-a good amount of the code but I didn't have time to go back and update the JQuery. My CSS is simple but goes well with the game.
-HTML was used the least.
-
-I know I could have gone back and created more efficient code, but given the timing, I wasn't able to do so. Additionally, I 
-couldn't get .stop() to work on the divs and was only able to get it to work on the 'start' button. Because of this, the game 
-can be cheated if someone is paying attention. I also worked to create a modal for the directions but kept hitting bugs.
+Ultimately I'm pleased with how it came out. I feel that if I broke this down and restarted, I could create much more efficient code using DRY principles. While I would love to do that, I believe my programming skills have progressed to a point that I would like to tackle bigger challenges. The Eye of Sauron may receive some additional updates, but for all intents and purposes, it is complete.
 
 https://mskelton19.github.io/
-
